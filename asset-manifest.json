@@ -1,13 +1,18 @@
 {
   "files": {
-    "main.css": "/Portafolio/static/css/main.c222391e.css",
-    "main.js": "/Portafolio/static/js/main.c30e0946.js",
+    "main.css": "/Portafolio/static/css/main.1f4ceef2.css",
+    "main.js": "/Portafolio/static/js/main.94cb0b6e.js",
+    "static/media/sendLove.png": "/Portafolio/static/media/sendLove.5c5c3fcad4d8f5c2e51e.png",
+    "static/media/modulo_youtube.png": "/Portafolio/static/media/modulo_youtube.461971a7994872821640.png",
+    "static/media/aquaWeb_home.png": "/Portafolio/static/media/aquaWeb_home.9514d7f4b8e61fc16d1c.png",
+    "static/media/magicGourmet_home.png": "/Portafolio/static/media/magicGourmet_home.9d14d3278616850f1eea.png",
+    "static/media/icons8-instagram.svg": "/Portafolio/static/media/icons8-instagram.195867d49e8e56bd43f0.svg",
     "index.html": "/Portafolio/index.html",
-    "main.c222391e.css.map": "/Portafolio/static/css/main.c222391e.css.map",
-    "main.c30e0946.js.map": "/Portafolio/static/js/main.c30e0946.js.map"
+    "main.1f4ceef2.css.map": "/Portafolio/static/css/main.1f4ceef2.css.map",
+    "main.94cb0b6e.js.map": "/Portafolio/static/js/main.94cb0b6e.js.map"
   },
   "entrypoints": [
-    "static/css/main.c222391e.css",
-    "static/js/main.c30e0946.js"
+    "static/css/main.1f4ceef2.css",
+    "static/js/main.94cb0b6e.js"
   ]
 }
