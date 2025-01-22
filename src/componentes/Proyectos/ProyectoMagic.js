@@ -1,9 +1,9 @@
 import React, {useEffect} from "react";
 import { useNavigate } from "react-router-dom";
 import "./Proyectos.css";
-import aquaWeb from "../../assets/aquaWeb_home.png";
+import magicGourmet from "../../assets/magicGourmet_home.png";
 
-const ProyectoAqua = () => {
+const ProyectoMagic = () => {
   const navigate = useNavigate(); // Hook para navegar entre páginas
 
   const handleNavigation = (path) => {
@@ -11,13 +11,13 @@ const ProyectoAqua = () => {
   };
 
   useEffect(() => {
-    document.title = "AquaWeb - Proyecto";
+    document.title = "MagicGourmet - Proyecto";
   }, []);
   return (
     <div className="App-proyect">
       {/* Header */}
       <header className="header-proyect">
-        <h1>AquaWeb</h1>
+        <h1>Magic Gourmet App</h1>
         <h3 onClick={() => handleNavigation("/Portafolio")}>Home</h3>
       </header>
       {/* Body */}
@@ -31,9 +31,7 @@ const ProyectoAqua = () => {
             <div className="habilidades-proyect">
               <h2>Habilidades Utilizadas</h2>
               <ul className="list-habilidades">
-                <li><img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML"></img></li>
-                <li><img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS"></img></li>
-                <li><img src="https://img.icons8.com/?size=100&id=XNQU0Xcm2I9s&format=png&color=000000" alt="PHP"></img></li>
+                <li><img src="https://img.icons8.com/?size=100&id=04OFrkjznvcd&format=png&color=000000" alt="ANDROID_STUDIO"></img></li>
                 <li><img src="https://img.icons8.com/?size=100&id=9nLaR5KFGjN0&format=png&color=000000" alt="MYSQL"></img></li>
                 <li><img src="https://img.icons8.com/?size=100&id=106562&format=png&color=000000" alt="GITHUB"></img></li>
               </ul>
@@ -44,7 +42,7 @@ const ProyectoAqua = () => {
               <div className="slider-container">
                 <div className="image-slider">
                   <div className="image-proyecto">
-                    <img src={aquaWeb} alt="AquaWeb" />
+                    <img src={magicGourmet} alt="MagicGourmet" />
                   </div>
                 </div>
               </div>
@@ -52,9 +50,9 @@ const ProyectoAqua = () => {
           </div>
         </div>
         <div className="nav-proyectos">
-          <h2 className="button-nav" onClick={() => handleNavigation("/ProyectoSendLove")}>Anterior</h2>
+          <h2 className="button-nav" onClick={() => handleNavigation("/ProyectoAqua")}>Anterior</h2>
           <h2>Proyecto</h2>
-          <h2 className="button-nav" onClick={() => handleNavigation("/ProyectoMagic")}>Proximo</h2>
+          <h2 className="button-nav" onClick={() => handleNavigation("/ProyectoCrawler")}>Proximo</h2>
         </div>
         <div className="parent-contactos">
           <h2>Social Media</h2>
@@ -74,4 +72,4 @@ const ProyectoAqua = () => {
   );
 };
 
-export default ProyectoAqua;
+export default ProyectoMagic;
