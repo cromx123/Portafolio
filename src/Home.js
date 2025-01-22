@@ -10,9 +10,10 @@ import sendLove from "./assets/sendLove.png";
 function App() {
   const navigate = useNavigate(); // Hook para navegar entre páginas
 
-  const handleClick = () => {
-    navigate("/ProyectoAqua"); // Redirige a la ruta deseada
+  const handleNavigation = (path) => {
+    navigate(path); // Redirige a la ruta proporcionada
   };
+
   useEffect(() => {
       document.title = "Portafolio CromxDev";
     }, []);
@@ -29,15 +30,31 @@ function App() {
 
           <div className="child-left">
             <div className="description">
-              <h2>Descripción</h2>
               <p>Soy comprometido y entusiasta. Apasionado de la tecnología y el desarrollo de programas. Disfruto resolviendo desafíos técnicos y creando soluciones innovadoras. Siempre en busca de nuevas formas de mejorar mis habilidades y contribuir al mundo de la tecnología.</p>
             </div>
             <div className="habilidades">
               <h2>Habilidades</h2>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
+              <h3>Lenguajes :</h3>
+              <ul className="list-habilidades">
+                <li><img src="https://img.icons8.com/?size=100&id=40670&format=png&color=000000" alt="C"></img></li>
+                <li><img src="https://img.icons8.com/?size=100&id=40669&format=png&color=000000" alt="CPLUSPLUS"></img></li>
+                <li><img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JAVASCRIPT"></img></li>
+                <li><img src="https://img.icons8.com/?size=100&id=lXPUSRCongH1&format=png&color=000000" alt="PYTHON"></img></li>
+                <li><img src="https://img.icons8.com/?size=100&id=20909&format=png&color=000000" alt="HTML"></img></li>
+                <li><img src="https://img.icons8.com/?size=100&id=21278&format=png&color=000000" alt="CSS"></img></li>
+                
+              </ul>
+              <h3>Herramientas :</h3>
+              <ul className="list-habilidades">
+                <li><img src="https://img.icons8.com/?size=100&id=qGZRK3KTK57F&format=png&color=000000" alt="DOCKER"></img></li>
+                <li><img src="https://img.icons8.com/?size=100&id=9nLaR5KFGjN0&format=png&color=000000" alt="MYSQL"></img></li>
+                <li><img src="https://img.icons8.com/?size=100&id=XNQU0Xcm2I9s&format=png&color=000000" alt="PHP"></img></li>
+                <li><img src="https://img.icons8.com/?size=100&id=Y8UPqrI8Yp7V&format=png&color=02DBF9" alt="REACT"></img></li>
+                <li><img src="https://img.icons8.com/?size=100&id=n3QRpDA7KZ7P&format=png&color=000000" alt="TENSORFLOW"></img></li>
+                <li><img src="https://img.icons8.com/?size=100&id=04OFrkjznvcd&format=png&color=000000" alt="ANDROID_STUDIO"></img></li>
+                <li><img src="https://img.icons8.com/?size=100&id=87330&format=png&color=000000" alt="FIREBASE"></img></li>
+                <li><img src="https://img.icons8.com/?size=100&id=rZwnRdJyYqRi&format=png&color=000000" alt="PLAYSTORE"></img></li>
+                <li><img src="https://img.icons8.com/?size=100&id=106562&format=png&color=053C5B" alt="GITHUB"></img></li>
               </ul>
             </div>
           </div>
@@ -46,7 +63,7 @@ function App() {
             <div className="slider">
               <h2>PROYECTOS</h2>
               <div className="slider-container">
-                <div className="vertical-text" onClick={handleClick}>
+                <div className="vertical-text" onClick={() => handleNavigation("/ProyectoAqua")}>
                   <span>A</span>
                   <span>Q</span>
                   <span>U</span>
@@ -59,7 +76,7 @@ function App() {
                     <img src={aquaWeb} alt="AQUAWEB" />
                   </div>
                 </div>
-                <div className="vertical-text">
+                <div className="vertical-text"  onClick={() => handleNavigation("/ProyectoMagic")}>
                   <span>M</span>
                   <span>A</span>
                   <span>G</span>
@@ -73,12 +90,12 @@ function App() {
                   <span>E</span>
                   <span>T</span>
                   <div className="image">
-                    <h2>Magic Gourtmet</h2>
+                    <h2>Magic Gourmet</h2>
                     <img src={magicGourmet} alt="MagicGourtmet" />
                   </div>
                 </div>
 
-                <div className="vertical-text">
+                <div className="vertical-text" onClick={() => handleNavigation("/ProyectoCrawler")}>
                   <span>C</span>
                   <span>R</span>
                   <span>A</span>
@@ -92,7 +109,7 @@ function App() {
                   </div>
                 </div>
 
-                <div className="vertical-text">
+                <div className="vertical-text" onClick={() => handleNavigation("/ProyectoSendLove")}>
                   <span>S</span>
                   <span>E</span>
                   <span>N</span>
