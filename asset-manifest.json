@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/Portafolio/static/css/main.2d73fd33.css",
-    "main.js": "/Portafolio/static/js/main.8deaa2c3.js",
+    "main.css": "/Portafolio/static/css/main.0b9ae5b4.css",
+    "main.js": "/Portafolio/static/js/main.7be21ed3.js",
     "static/media/sendLove.png": "/Portafolio/static/media/sendLove.5c5c3fcad4d8f5c2e51e.png",
     "static/media/modulo_youtube.png": "/Portafolio/static/media/modulo_youtube.461971a7994872821640.png",
     "static/media/aquaWeb_home.png": "/Portafolio/static/media/aquaWeb_home.9514d7f4b8e61fc16d1c.png",
     "static/media/magicGourmet_home.png": "/Portafolio/static/media/magicGourmet_home.9d14d3278616850f1eea.png",
     "static/media/humanidades.png": "/Portafolio/static/media/humanidades.634565872692c495f5b1.png",
+    "static/media/fa-solid-900.woff2": "/Portafolio/static/media/fa-solid-900.f54756da1f3d1b88887f.woff2",
+    "static/media/fa-brands-400.woff2": "/Portafolio/static/media/fa-brands-400.1f6bad931d92a0a52c45.woff2",
+    "static/media/fa-regular-400.woff2": "/Portafolio/static/media/fa-regular-400.5632c43107f4d3fa4806.woff2",
+    "static/media/fa-v4compatibility.woff2": "/Portafolio/static/media/fa-v4compatibility.24fc9d217708cb3f0362.woff2",
     "index.html": "/Portafolio/index.html",
-    "main.2d73fd33.css.map": "/Portafolio/static/css/main.2d73fd33.css.map",
-    "main.8deaa2c3.js.map": "/Portafolio/static/js/main.8deaa2c3.js.map"
+    "main.0b9ae5b4.css.map": "/Portafolio/static/css/main.0b9ae5b4.css.map",
+    "main.7be21ed3.js.map": "/Portafolio/static/js/main.7be21ed3.js.map"
   },
   "entrypoints": [
-    "static/css/main.2d73fd33.css",
-    "static/js/main.8deaa2c3.js"
+    "static/css/main.0b9ae5b4.css",
+    "static/js/main.7be21ed3.js"
   ]
 }
