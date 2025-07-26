@@ -92,7 +92,7 @@ const HomePage = () => {
             <div
               key={title}
               onClick={() => handleNavigation(path)}
-              className="cursor-pointer bg-neutral-800 rounded-xl overflow-hidden hover:scale-105 transition-transform"
+              className="cursor-pointer bg-neutral-800 rounded-xl overflow-hidden hover:scale-105 transition-transform hover:shadow-[0_0_25px_theme('colors.zinc.600')]"
             >
               <img src={img} alt={title} className="w-full h-40 object-cover" />
               <div className="p-4">

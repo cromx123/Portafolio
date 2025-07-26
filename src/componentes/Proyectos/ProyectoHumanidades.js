@@ -22,6 +22,7 @@ const ProyectoHumanidades360 = () => {
         duration: "5 meses",
         completado: "Diciembre 2023",
       }}
+      glowColor = "rgba(121, 255, 100, 0.3)"
       rutaAnterior="/ProyectoSendLove"
       rutaSiguiente="/ProyectoAqua"
     />
