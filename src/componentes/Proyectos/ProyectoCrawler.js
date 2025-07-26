@@ -1,75 +1,34 @@
-import React, {useEffect} from "react";
-import { useNavigate } from "react-router-dom";
-import "./Proyectos.css";
-import crawler from "../../assets/modulo_youtube.png";
+import React, { useEffect } from "react";
+import ProyectoLayout from "../LayoutProyect";
+import crawlerImg from "../../assets/modulo_youtube.png";
 
 const ProyectoCrawler = () => {
-  const navigate = useNavigate(); // Hook para navegar entre páginas
-
-  const handleNavigation = (path) => {
-    navigate(path); // Redirige a la ruta proporcionada
-  };
-
   useEffect(() => {
-    document.title = "Crawler - Proyecto";
+    document.title = "YouTube Crawler - Proyecto";
   }, []);
+
   return (
-    <div className="App-proyect">
-      {/* Header */}
-      <header className="header-proyect">
-        <h1>Crawler Youtube</h1>
-        <h3 onClick={() => handleNavigation("/Portafolio")}>Home</h3>
-      </header>
-      {/* Body */}
-      <main className="body-proyect">
-        <div className="parent-proyect">
-          <div className="child-left-proyect">
-            <div className="description-proyect">
-              <h2>Descripción del proyecto</h2>
-              <p>Es una página web del tipo E-commerce para venta de bidones de agua purificada. .</p>
-            </div>
-            <div className="habilidades-proyect">
-              <h2>Habilidades Utilizadas</h2>
-              <ul className="list-habilidades">
-                <li><img src="https://img.icons8.com/?size=100&id=108784&format=png&color=000000" alt="JAVASCRIPT"></img></li>
-                <li><img src="https://img.icons8.com/?size=100&id=Y8UPqrI8Yp7V&format=png&color=02DBF9" alt="REACT"></img></li>
-                <li><img src="https://img.icons8.com/?size=100&id=lXPUSRCongH1&format=png&color=000000" alt="PYTHON"></img></li>
-                <li><img src="https://img.icons8.com/?size=100&id=106562&format=png&color=000000" alt="GITHUB"></img></li>
-              </ul>
-            </div>
-          </div>
-          <div className="child-rigth-proyect">
-            <div className="slider">
-              <div className="slider-container">
-                <div className="image-slider">
-                  <div className="image-proyecto">
-                    <img src={crawler} alt="Crawler" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="nav-proyectos">
-          <h2 className="button-nav" onClick={() => handleNavigation("/ProyectoMagic")}>Anterior</h2>
-          <h2>Proyecto</h2>
-          <h2 className="button-nav" onClick={() => handleNavigation("/ProyectoSendLove")}>Proximo</h2>
-        </div>
-        <div className="parent-contactos">
-          <h2>Social Media</h2>
-          <div className="social-container">
-            <a href="https://www.instagram.com/_cris.ogc" className="social-icon instagram" aria-label="Instagram"></a>
-            <a href="https://www.linkedin.com/in/cristobal-gallardo-cromxdev/" className="social-icon linkedin" aria-label="LinkedIn"></a>
-            <a href="https://github.com/cromx123" className="social-icon github" aria-label="GitHub"></a>
-            <a href="https://www.facebook.com/cristobal.o.gallardo" className="social-icon facebook" aria-label="Facebook"></a>
-          </div>
-        </div>
-      </main>
-      {/* Footer */}
-      <footer className="footer">
-        <p>© 2025 CromxDev - Todos los derechos reservados.</p>
-      </footer>
-    </div>
+    <ProyectoLayout
+      title="YouTube Crawler"
+      image={crawlerImg}
+      descripcion="Proyecto desarrollado para recolectar y analizar datos de videos en YouTube mediante API oficial y técnicas de scraping con Python. La plataforma permite explorar canales, filtrar contenido, visualizar métricas clave y exportar resultados."
+      detalle="Se diseñó un crawler personalizado que combina peticiones a la API de YouTube con BeautifulSoup para obtener información extendida de cada video. La data es procesada y enviada a un frontend en React, donde se muestran estadísticas como duración, vistas, engagement, y frecuencia de publicación. Se implementaron filtros dinámicos, visualización paginada y funcionalidades de exportación."
+      habilidades={[
+        ["Python", "https://img.icons8.com/?size=100&id=13441&format=png&color=ffffff"],
+        ["React", "https://img.icons8.com/?size=100&id=123603&format=png&color=ffffff"],
+        ["YouTube API", "https://img.icons8.com/?size=100&id=19318&format=png&color=ffffff"],
+        ["GitHub", "https://img.icons8.com/?size=100&id=106562&format=png&color=ffffff"],
+      ]}
+      detallep={{
+        cliente: "Freelancer",
+        rol: "Python Developer",
+        duration: "1 meses",
+        completado: "Julio 2024",
+      }}
+      glowColor = "rgba(255, 100, 100, 0.3)"
+      rutaAnterior="/ProyectoMagic"
+      rutaSiguiente="/ProyectoSendLove"
+    />
   );
 };
 

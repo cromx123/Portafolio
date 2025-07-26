@@ -1,74 +1,33 @@
-import React, {useEffect} from "react";
-import { useNavigate } from "react-router-dom";
-import "./Proyectos.css";
+import React, { useEffect } from "react";
+import ProyectoLayout from "../LayoutProyect";
 import magicGourmet from "../../assets/magicGourmet_home.png";
 
 const ProyectoMagic = () => {
-  const navigate = useNavigate(); // Hook para navegar entre páginas
-
-  const handleNavigation = (path) => {
-    navigate(path); // Redirige a la ruta proporcionada
-  };
-
   useEffect(() => {
     document.title = "MagicGourmet - Proyecto";
   }, []);
+
   return (
-    <div className="App-proyect">
-      {/* Header */}
-      <header className="header-proyect">
-        <h1>Magic Gourmet App</h1>
-        <h3 onClick={() => handleNavigation("/Portafolio")}>Home</h3>
-      </header>
-      {/* Body */}
-      <main className="body-proyect">
-        <div className="parent-proyect">
-          <div className="child-left-proyect">
-            <div className="description-proyect">
-              <h2>Descripción del proyecto</h2>
-              <p>Es una página web del tipo E-commerce para venta de bidones de agua purificada. .</p>
-            </div>
-            <div className="habilidades-proyect">
-              <h2>Habilidades Utilizadas</h2>
-              <ul className="list-habilidades">
-                <li><img src="https://img.icons8.com/?size=100&id=04OFrkjznvcd&format=png&color=000000" alt="ANDROID_STUDIO"></img></li>
-                <li><img src="https://img.icons8.com/?size=100&id=9nLaR5KFGjN0&format=png&color=000000" alt="MYSQL"></img></li>
-                <li><img src="https://img.icons8.com/?size=100&id=106562&format=png&color=000000" alt="GITHUB"></img></li>
-              </ul>
-            </div>
-          </div>
-          <div className="child-rigth-proyect">
-            <div className="slider">
-              <div className="slider-container">
-                <div className="image-slider">
-                  <div className="image-proyecto">
-                    <img src={magicGourmet} alt="MagicGourmet" />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="nav-proyectos">
-          <h2 className="button-nav" onClick={() => handleNavigation("/ProyectoAqua")}>Anterior</h2>
-          <h2>Proyecto</h2>
-          <h2 className="button-nav" onClick={() => handleNavigation("/ProyectoCrawler")}>Proximo</h2>
-        </div>
-        <div className="parent-contactos">
-          <h2>Social Media</h2>
-          <div className="social-container">
-            <a href="https://www.instagram.com/_cris.ogc" className="social-icon instagram" aria-label="Instagram"></a>
-            <a href="https://www.linkedin.com/in/cristobal-gallardo-cromxdev/" className="social-icon linkedin" aria-label="LinkedIn"></a>
-            <a href="https://github.com/cromx123" className="social-icon github" aria-label="GitHub"></a>
-            <a href="https://www.facebook.com/cristobal.o.gallardo" className="social-icon facebook" aria-label="Facebook"></a>
-          </div>
-        </div>
-      </main>
-      {/* Footer */}
-      <footer className="footer">
-        <p>© 2025 CromxDev - Todos los derechos reservados.</p>
-      </footer>
-    </div>
+    <ProyectoLayout
+      title="Magic Gourmet"
+      image={magicGourmet}
+      descripcion="Magic Gourmet es una plataforma web gastronómica que permite explorar recetas, agendar reservas y descubrir eventos culinarios. Está orientada tanto a usuarios aficionados como a profesionales, y cuenta con una interfaz responsiva, visualmente atractiva y fácil de usar."
+      detalle="El sistema fue diseñado con arquitectura modular y experiencia de usuario como prioridad. Incorpora autenticación básica, base de datos MySQL para almacenar recetas, reservas y eventos, así como un dashboard para gestión interna."
+      habilidades={[
+        ["Android", "https://img.icons8.com/?size=100&id=04OFrkjznvcd&format=png&color=ffffff"],
+        ["MySQL", "https://img.icons8.com/?size=100&id=9nLaR5KFGjN0&format=png&color=ffffff"],
+        ["GitHub", "https://img.icons8.com/?size=100&id=106562&format=png&color=ffffff"],
+      ]}
+      detallep={{
+        cliente: "Magic Team",
+        rol: "Fullstack Developer",
+        duration: "4 meses",
+        completado: "Julio 2023",
+      }}
+      glowColor = "rgba(188, 100, 255, 0.3)"
+      rutaAnterior="/ProyectoAqua"
+      rutaSiguiente="/ProyectoCrawler"
+    />
   );
 };
 
