@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/Portafolio" element={<HomePage />} /> {/* Página principal */}
+        <Route path="/" element={<HomePage />} /> {/* Página principal */}
         <Route path="/ProyectoAqua" element={<ProyectoAqua />} /> 
         <Route path="/ProyectoMagic" element={<ProyectoMagic />} /> 
         <Route path="/ProyectoCrawler" element={<ProyectoCrawler />} />
