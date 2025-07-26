@@ -13,7 +13,7 @@ const ProyectoSendLove = () => {
       title="Send Love"
       image={sendLove}
       descripcion="Send Love es un juego casual para Android, creado con Flutter, donde el usuario lanza corazones evitando obstáculos. Cuenta con autenticación mediante Firebase, rankings en tiempo real y niveles de dificultad progresiva. Su diseño y jugabilidad buscan ofrecer una experiencia divertida y adictiva."
-      detalle="El desarrollo se centró en la mecánica de juego tipo 'endless runner', con física personalizada y control táctil. Además, integra Firebase Authentication para crear perfiles, y Firestore para almacenar puntuaciones y rankings dinámicos. Fue diseñado para ejecutarse fluidamente en dispositivos Android de gama media."
+      detalle="El desarrollo se centró en la mecánica de juego tipo 'clicker', con física personalizada y control táctil. Además, integra Firebase Authentication para crear perfiles, y Firestore para almacenar puntuaciones y rankings dinámicos. Fue diseñado para ejecutarse fluidamente en dispositivos Android de gama media."
       habilidades={[
         ["Android Studio", "https://img.icons8.com/?size=100&id=04OFrkjznvcd&format=png&color=ffffff"],
         ["Firebase", "https://img.icons8.com/?size=100&id=87330&format=png&color=ffffff"],
