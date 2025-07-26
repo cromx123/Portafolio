@@ -35,7 +35,7 @@ const HomePage = () => {
             Ver Proyectos
           </a>
           <a
-            href="/CV_CristobalGallardo.pdf"
+            href="/CV_CristobalGallardoC.pdf"
             download
             className="bg-lime-600 hover:bg-lime-700 text-white font-semibold py-3 px-6 rounded-lg shadow transition"
           >
