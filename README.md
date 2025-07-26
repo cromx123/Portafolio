@@ -10,6 +10,8 @@ Bienvenido a mi portafolio personal desarrollado con React y TailwindCSS. Aquí 
 - 🎨 Interfaz moderna y adaptable
 - 🌍 Despliegue con GitHub Pages
 
+---
+
 ### 📁 Estructura del Proyecto
 
 src/
@@ -23,6 +25,8 @@ src/
 ├── assets/                 # Imágenes y recursos
 └── Detalles/               # Componentes visuales reutilizables como fondo glow
 
+---
+
 ### 🧠 Proyectos destacados
 
 | Proyecto              | Descripción                                                                 |
@@ -32,6 +36,8 @@ src/
 | 🔎 Web Crawler        | Herramienta de monitoreo de precios y productos                             |
 | 💌 SendLove           | Red social experimental con mensajes anónimos positivos                     |
 | 🗺 Humanidades 360°    | Mapa interactivo de espacios de aprendizaje                                 |
+
+---
 
 ### ☁️ Despliegue
 
