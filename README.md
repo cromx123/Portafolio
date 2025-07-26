@@ -14,6 +14,7 @@ Bienvenido a mi portafolio personal desarrollado con React y TailwindCSS. Aquí 
 
 ### 📁 Estructura del Proyecto
 
+```txt
 src/
 ├── Home.jsx                # Página de inicio
 ├── App.jsx                 # Configuración de rutas
@@ -24,6 +25,7 @@ src/
 │       └── ...
 ├── assets/                 # Imágenes y recursos
 └── Detalles/               # Componentes visuales reutilizables como fondo glow
+```
 
 ---
 
