@@ -24,11 +24,11 @@ const ProyectoLayout = ({
       <header className="flex flex-col items-center justify-center p-6 border-b border-white/10 bg-zinc-900 shadow-md gap-4">
         <h1 className="text-3xl font-bold">{title}</h1>
         <div className="flex gap-6 items-center text-white">
-          <Link to="/Portafolio" className="hover:text-blue-300 transition">
+          <Link to="/" className="hover:text-blue-300 transition">
             Home
           </Link>
           <span className="text-white/500">•</span>
-          <Link to="/Portafolio#proyectos" className="hover:text-blue-300 transition">
+          <Link to="/" className="hover:text-blue-300 transition">
             Proyectos
           </Link>
           <span className="text-white/500">•</span>
