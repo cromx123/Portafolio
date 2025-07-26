@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2533a622.css",
-    "main.js": "/static/js/main.bfc280ab.js",
+    "main.js": "/static/js/main.4ccd3f86.js",
     "static/media/sendLove.png": "/static/media/sendLove.5c5c3fcad4d8f5c2e51e.png",
     "static/media/modulo_youtube.png": "/static/media/modulo_youtube.461971a7994872821640.png",
     "static/media/aquaWeb_home.png": "/static/media/aquaWeb_home.9514d7f4b8e61fc16d1c.png",
@@ -13,10 +13,10 @@
     "static/media/fa-v4compatibility.woff2": "/static/media/fa-v4compatibility.24fc9d217708cb3f0362.woff2",
     "index.html": "/index.html",
     "main.2533a622.css.map": "/static/css/main.2533a622.css.map",
-    "main.bfc280ab.js.map": "/static/js/main.bfc280ab.js.map"
+    "main.4ccd3f86.js.map": "/static/js/main.4ccd3f86.js.map"
   },
   "entrypoints": [
     "static/css/main.2533a622.css",
-    "static/js/main.bfc280ab.js"
+    "static/js/main.4ccd3f86.js"
   ]
 }
