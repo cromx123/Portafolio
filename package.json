@@ -2,7 +2,8 @@
   "name": "cromxdev",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cromx123.github.io/Portafolio",
+  "homepage": "https://cgallardoc.cl"
+,
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.0.0",
     "cra-template": "1.2.0",
