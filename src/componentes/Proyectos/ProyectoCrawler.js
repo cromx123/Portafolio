@@ -18,9 +18,10 @@ const ProyectoCrawler = () => {
         ["React", "https://img.icons8.com/?size=100&id=123603&format=png&color=ffffff"],
         ["YouTube API", "https://img.icons8.com/?size=100&id=19318&format=png&color=ffffff"],
         ["GitHub", "https://img.icons8.com/?size=100&id=106562&format=png&color=ffffff"],
+        ["Docker","https://img.icons8.com/?size=100&id=qGZRK3KTK57F&format=png&color=000000"],
       ]}
       detallep={{
-        cliente: "Freelancer",
+        cliente: "NeuroVision",
         rol: "Python Developer",
         duration: "1 meses",
         completado: "Julio 2024",

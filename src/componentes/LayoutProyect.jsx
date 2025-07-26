@@ -28,7 +28,7 @@ const ProyectoLayout = ({
             Home
           </Link>
           <span className="text-white/500">•</span>
-          <Link to="/Proyectos" className="hover:text-blue-300 transition">
+          <Link to="/Portafolio#proyectos" className="hover:text-blue-300 transition">
             Proyectos
           </Link>
           <span className="text-white/500">•</span>
