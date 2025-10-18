@@ -1,0 +1,44 @@
+{
+  "timestamp": 1760806301714,
+  "data": {
+    "repositories": 28,
+    "followers": 0,
+    "stars": 2,
+    "pullRequests": 27,
+    "contributions": 27,
+    "languages": [
+      {
+        "name": "HTML",
+        "percent": 46.88706990085135
+      },
+      {
+        "name": "JavaScript",
+        "percent": 10.730316146161652
+      },
+      {
+        "name": "Python",
+        "percent": 10.608413223256697
+      }
+    ],
+    "recent": [
+      "PushEvent @ cromx123/Portafolio",
+      "PushEvent @ cromx123/Portafolio",
+      "PushEvent @ cromx123/logica2025"
+    ],
+    "topRepoStars": 2,
+    "avgStarsPerRepo": 0,
+    "openPRs": 0,
+    "techStack": [
+      "TypeScript",
+      "React",
+      "Next.js",
+      "Node.js",
+      "Express",
+      "Python",
+      "MongoDB",
+      "Docker",
+      "Vite",
+      "Tailwind"
+    ]
+  }
+}

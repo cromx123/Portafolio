@@ -11,12 +11,13 @@ import github from "./assets/github_icon.png";
 
 
 // Sections
-// import TestSection from "./componentes/home/TestSection";
+import TestSection from "./componentes/home/TestSection";
 import Navbar from "./componentes/home/NavBar";
 import HeroSection from "./componentes/home/HeroSection";
 import SkillsSection from "./componentes/home/SkillsSection";
 import ProjectsSection from "./componentes/home/ProjectsSection";
 import ContactSection from "./componentes/home/ContactSection";
+import GithubSection from "./componentes/home/GithubStatsSection";
 import SocialSection from "./componentes/home/SocialSection";
 import FooterSection from "./componentes/home/FooterSection";
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -52,8 +53,14 @@ const HomePage = () => {
 
       <SkillsSection/>
       <ProjectsSection projects={projects} onNavigate={handleNavigation} />
+      
+      <GithubSection />
       <ContactSection />
+      
+            
+      {/* <TestSection /> */}
       <SocialSection />
+
       <FooterSection />
     </div>
   );
