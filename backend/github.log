@@ -1,0 +1,21 @@
+[2025-10-18T10:05:16.611Z] Error al obtener GitHub stats: saveDataToFile is not defined
+[2025-10-18T10:05:16.615Z] Error al obtener GitHub stats: saveDataToFile is not defined
+[2025-10-18T10:25:38.071Z] Error al obtener GitHub stats: saveDataToFile is not defined
+[2025-10-18T10:25:38.082Z] Error al obtener GitHub stats: saveDataToFile is not defined
+[2025-10-18T10:27:20.269Z] GitHub stats actualizadas: {"repositories":28,"followers":0,"stars":2,"pullRequests":27,"contributions":27,"languages":[{"name":"HTML","percent":46.88706990085135},{"name":"JavaScript","percent":10.730316146161652},{"name":"Python","percent":10.608413223256697}],"recent":["PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/logica2025"],"topRepoStars":2,"avgStarsPerRepo":0,"openPRs":0,"techStack":["TypeScript","React","Next.js","Node.js","Express","Python","MongoDB","Docker","Vite","Tailwind"]}
+[2025-10-18T10:27:26.359Z] Serving GitHub stats from cache
+[2025-10-18T10:27:26.427Z] Serving GitHub stats from cache
+[2025-10-18T16:51:41.714Z] GitHub stats actualizadas: {"repositories":28,"followers":0,"stars":2,"pullRequests":27,"contributions":27,"languages":[{"name":"HTML","percent":46.88706990085135},{"name":"JavaScript","percent":10.730316146161652},{"name":"Python","percent":10.608413223256697}],"recent":["PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/logica2025"],"topRepoStars":2,"avgStarsPerRepo":0,"openPRs":0,"techStack":["TypeScript","React","Next.js","Node.js","Express","Python","MongoDB","Docker","Vite","Tailwind"]}
+[2025-10-18T16:55:01.999Z] Serving GitHub stats from cache
+[2025-10-18T16:55:02.007Z] Serving GitHub stats from cache
+[2025-10-18T16:56:57.444Z] Serving GitHub stats from cache
+[2025-10-18T16:56:57.446Z] Serving GitHub stats from cache
+[2025-10-18T17:41:20.361Z] Serving GitHub stats from cache
+[2025-10-18T17:41:20.367Z] Serving GitHub stats from cache
+[2025-10-18T17:46:39.399Z] Serving GitHub stats from cache
+[2025-10-18T17:46:39.403Z] Serving GitHub stats from cache
+[2025-10-18T17:47:39.585Z] Serving GitHub stats from cache
+[2025-10-18T17:47:39.596Z] Serving GitHub stats from cache
+[2025-10-18T17:53:09.587Z] Serving GitHub stats from cache
+[2025-10-18T17:53:09.598Z] Serving GitHub stats from cache
+[2025-10-18T18:20:22.823Z] Serving GitHub stats from cache
