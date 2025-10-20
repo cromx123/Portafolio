@@ -29,10 +29,11 @@ import {
   AreaChart,
 } from "recharts";
 
+import { formatRange } from "../../utils/formatDate.jsx";
+
 const ENDPOINT =
   process.env.REACT_APP_GITHUB_STATS_URL ||
-  process.env.NEXT_PUBLIC_GITHUB_STATS_URL ||
-  "http://localhost:3002/api/github";
+  process.env.NEXT_PUBLIC_GITHUB_STATS_URL;
 
 const TABS = [
   { title: "Overview", icon: BarChart3 },
@@ -91,8 +92,30 @@ function Overview({ data }) {
     },
   ];
 
-  const languages = data?.languages || []; // [{name, percent}]
+  const languages = data?.languages || []; 
 
+  const languageColors = {
+    TypeScript: "#3178c6",
+    JavaScript: "#f1e05a",
+    Python: "#3572A5",
+    HTML: "#e34c26",
+    CSS: "#563d7c",
+    C: "#555555",
+    "C++": "#f34b7d",
+    Java: "#b07219",
+    Go: "#00ADD8",
+    Rust: "#dea584",
+    Shell: "#89e051",
+    PHP: "#4F5D95",
+    Ruby: "#701516",
+    Swift: "#ffac45",
+    Kotlin: "#A97BFF",
+    Dart: "#00B4AB",
+    Vue: "#41B883",
+    React: "#61DAFB",
+    Dockerfile: "#384d54",
+    default: "#999999",
+  };
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
@@ -192,35 +215,38 @@ function Overview({ data }) {
 
             <div className="space-y-3">
               {languages.length ? (
-                languages.map((lang, i) => (
-                  <div key={lang.name} className="space-y-1">
-                    <div className="mb-1 flex items-center justify-between">
-                      <span className="flex items-center gap-2 text-sm">
-                        <span
-                          className="h-2 w-2 rounded-full"
+                languages.map((lang, i) => {
+                  const languageColor = languageColors[lang.name] || languageColors.default;
+                  return (
+                    <div key={lang.name} className="space-y-1">
+                      <div className="mb-1 flex items-center justify-between">
+                        <span className="flex items-center gap-2 text-sm">
+                          <span
+                            className="h-2 w-2 rounded-full"
+                            style={{
+                              backgroundColor: languageColor
+                            }}
+                          />
+                          {lang.name}
+                        </span>
+                        <span className="text-xs text-white/60">
+                          {Math.round(lang.percent)}%
+                        </span>
+                      </div>
+                      <div className="h-1.5 w-full rounded-full bg-white/10">
+                        <motion.div
+                          initial={{ width: 0 }}
+                          animate={{ width: `${lang.percent}%` }}
+                          transition={{ delay: i * 0.05, duration: 0.5 }}
+                          className="h-1.5 rounded-full"
                           style={{
-                            backgroundColor: ["#3178c6", "#3572A5", "#f1e05a"][i % 3],
+                            backgroundColor: languageColor
                           }}
                         />
-                        {lang.name}
-                      </span>
-                      <span className="text-xs text-white/60">
-                        {Math.round(lang.percent)}%
-                      </span>
+                      </div>
                     </div>
-                    <div className="h-1.5 w-full rounded-full bg-white/10">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        animate={{ width: `${lang.percent}%` }}
-                        transition={{ delay: i * 0.05, duration: 0.5 }}
-                        className="h-1.5 rounded-full"
-                        style={{
-                          backgroundColor: ["#3178c6", "#3572A5", "#f1e05a"][i % 3],
-                        }}
-                      />
-                    </div>
-                  </div>
-                ))
+                  );
+            })
               ) : (
                 <p className="text-sm text-white/60">No language data available</p>
               )}
@@ -244,6 +270,7 @@ function ActivityTab({ data }) {
       commits: Math.max(1, Math.round(Math.random() * 5)), // placeholder
     }));
   }, [data]);
+
 
   return (
     <div className="space-y-6">
@@ -317,23 +344,24 @@ function ActivityTab({ data }) {
 function Insights({ data }) {
   const totalRepos = Math.max(1, data?.repositories || 0);
   const original = Math.round(
-    ((data?.originalRepos || 0) / totalRepos) * 100
+    ((data?.reposConsidered || 0) / totalRepos) * 100
   );
   const forked = 100 - original;
 
+  
   const streakCards = [
-    { label: "Current Streak", value: data?.currentStreak || 0, unit: "days", icon: Flame },
-    { label: "Longest Streak", value: data?.longestStreak || 0, unit: "days", icon: Award },
-    { label: "Best Day", value: data?.bestDayCommits || 0, unit: "commits", icon: Target },
+    { label: "Current Streak", value: data?.currentStreak.length || 0, unit: "days", icon: Flame , start: data?.currentStreak.start, end: data?.currentStreak.end},
+    { label: "Longest Streak", value: data?.longestStreak.length || 0, unit: "days", icon: Award , start: data?.longestStreak.start, end: data?.longestStreak.end},
+    { label: "Total Contributions", value: data?.totalContributions || 0, unit: "commits", icon: Target , start: data?.firstContribution, end: "Present"},
   ];
 
   const activityMetrics = [
     {
       label: "Pull Requests",
-      closed: data?.pullRequests ? Math.round(((data.mergedPRs || 0) + (data.closedPRs || 0)) / (data.pullRequests || 1) * 100) : 0,
+      closed: data?.pullRequests ? Math.round(((data.mergedPullRequests || 0) + (data.closedPullRequests || 0)) / (data.pullRequests || 1) * 100) : 0,
       total: data?.pullRequests || 0,
       color: "#22c55e",
-      breakdown: `${data?.mergedPRs || 0} merged, ${data?.closedPRs || 0} closed`,
+      breakdown: `${data?.mergedPullRequests || 0} merged, ${data?.closedPullRequests || 0} closed`,
     },
     {
       label: "Issues",
@@ -358,6 +386,9 @@ function Insights({ data }) {
                 <span className="text-2xl font-bold"><NumberTicker value={c.value} /></span>
                 <span className="text-sm text-white/60">{c.unit}</span>
               </div>
+              <p className="mt-2 text-xs text-white/50">
+                {formatRange(c.start, c.end)}
+              </p>
             </Card>
           </motion.div>
         ))}

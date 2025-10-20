@@ -1,26 +1,49 @@
 {
-  "timestamp": 1760806301714,
+  "timestamp": 1760934929484,
   "data": {
+    "repositories_total": 28,
+    "public_repos": 28,
     "repositories": 28,
     "followers": 0,
     "stars": 2,
     "pullRequests": 27,
+    "mergedPullRequests": 24,
+    "closedPullRequests": 3,
     "contributions": 27,
     "languages": [
       {
-        "name": "HTML",
-        "percent": 46.88706990085135
+        "name": "Python",
+        "percent": 23.849902438944063,
+        "raw": 6.439473658514897
+      },
+      {
+        "name": "C",
+        "percent": 23.76308568220198,
+        "raw": 6.416033134194534
       },
       {
         "name": "JavaScript",
-        "percent": 10.730316146161652
+        "percent": 13.923163250391504,
+        "raw": 3.759254077605706
       },
       {
-        "name": "Python",
-        "percent": 10.608413223256697
+        "name": "HTML",
+        "percent": 6.7238893633629715,
+        "raw": 1.8154501281080022
+      },
+      {
+        "name": "Kotlin",
+        "percent": 3.7102816483366623,
+        "raw": 1.0017760450508988
       }
     ],
+    "languageMethod": "per-repo-average",
+    "reposConsidered": 27,
     "recent": [
+      "PushEvent @ cromx123/Portafolio",
+      "PushEvent @ cromx123/Portafolio",
+      "PushEvent @ cromx123/Portafolio",
+      "PushEvent @ cromx123/Portafolio",
       "PushEvent @ cromx123/Portafolio",
       "PushEvent @ cromx123/Portafolio",
       "PushEvent @ cromx123/logica2025"
@@ -28,17 +51,17 @@
     "topRepoStars": 2,
     "avgStarsPerRepo": 0,
     "openPRs": 0,
-    "techStack": [
-      "TypeScript",
-      "React",
-      "Next.js",
-      "Node.js",
-      "Express",
-      "Python",
-      "MongoDB",
-      "Docker",
-      "Vite",
-      "Tailwind"
-    ]
+    "totalContributions": 407,
+    "firstContribution": "2020-11-03",
+    "currentStreak": {
+      "start": "2025-12-31",
+      "end": "2025-12-31",
+      "length": 0
+    },
+    "longestStreak": {
+      "start": "2024-08-13",
+      "end": "2024-08-17",
+      "length": 5
+    }
   }
 }

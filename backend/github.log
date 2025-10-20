@@ -19,3 +19,84 @@
 [2025-10-18T17:53:09.587Z] Serving GitHub stats from cache
 [2025-10-18T17:53:09.598Z] Serving GitHub stats from cache
 [2025-10-18T18:20:22.823Z] Serving GitHub stats from cache
+[2025-10-19T14:59:13.104Z] GitHub stats actualizadas: {"repositories":28,"followers":0,"stars":2,"pullRequests":27,"contributions":27,"languages":[{"name":"HTML","percent":46.42511749987006},{"name":"JavaScript","percent":11.60984103177137},{"name":"Python","percent":10.50389438747856}],"recent":["PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/logica2025"],"topRepoStars":2,"avgStarsPerRepo":0,"openPRs":0,"techStack":["TypeScript","React","Next.js","Node.js","Express","Python","MongoDB","Docker","Vite","Tailwind"]}
+[2025-10-19T16:10:28.882Z] Serving GitHub stats from cache
+[2025-10-19T16:12:42.342Z] Serving GitHub stats from cache
+[2025-10-19T16:39:05.743Z] Serving GitHub stats from cache
+[2025-10-19T16:39:18.086Z] Serving GitHub stats from cache
+[2025-10-19T16:49:44.844Z] Serving GitHub stats from cache
+[2025-10-19T16:51:01.877Z] Serving GitHub stats from cache
+[2025-10-19T18:09:40.076Z] Serving GitHub stats from cache
+[2025-10-19T18:43:42.780Z] Serving GitHub stats from cache
+[2025-10-19T18:44:13.795Z] Serving GitHub stats from cache
+[2025-10-19T18:44:40.352Z] Serving GitHub stats from cache
+[2025-10-19T18:47:19.191Z] Serving GitHub stats from cache
+[2025-10-19T18:47:31.216Z] Serving GitHub stats from cache
+[2025-10-19T18:47:44.258Z] Serving GitHub stats from cache
+[2025-10-19T18:48:36.623Z] Serving GitHub stats from cache
+[2025-10-19T18:49:09.626Z] Serving GitHub stats from cache
+[2025-10-19T18:54:33.277Z] Serving GitHub stats from cache
+[2025-10-19T18:54:56.160Z] Serving GitHub stats from cache
+[2025-10-19T18:55:16.617Z] Serving GitHub stats from cache
+[2025-10-19T18:55:50.175Z] Serving GitHub stats from cache
+[2025-10-19T18:58:50.686Z] Serving GitHub stats from cache
+[2025-10-19T19:00:07.127Z] Serving GitHub stats from cache
+[2025-10-19T19:01:38.576Z] Serving GitHub stats from cache
+[2025-10-19T19:03:16.992Z] Serving GitHub stats from cache
+[2025-10-19T19:04:31.497Z] Serving GitHub stats from cache
+[2025-10-19T19:12:00.228Z] Serving GitHub stats from cache
+[2025-10-19T19:12:34.537Z] Serving GitHub stats from cache
+[2025-10-19T19:13:04.278Z] Serving GitHub stats from cache
+[2025-10-19T19:13:10.712Z] Serving GitHub stats from cache
+[2025-10-19T19:14:06.003Z] Error al obtener GitHub stats: totalWeight is not defined
+[2025-10-19T19:14:53.302Z] GitHub stats actualizadas: {"repositories":28,"followers":0,"stars":2,"pullRequests":27,"contributions":27,"languages":[{"name":"Python","percent":23.849902438944063,"raw":6.439473658514897},{"name":"C","percent":23.76308568220198,"raw":6.416033134194534},{"name":"JavaScript","percent":13.923163250391504,"raw":3.759254077605706},{"name":"HTML","percent":6.7238893633629715,"raw":1.8154501281080022},{"name":"Kotlin","percent":3.7102816483366623,"raw":1.0017760450508988}],"languageMethod":"per-repo-average","reposConsidered":27,"recent":["PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/logica2025"],"topRepoStars":2,"avgStarsPerRepo":0,"openPRs":0,"techStack":["TypeScript","React","Next.js","Node.js","Express","Python","MongoDB","Docker","Vite","Tailwind"]}
+[2025-10-19T19:16:09.977Z] Serving GitHub stats from cache
+[2025-10-19T19:17:48.610Z] Serving GitHub stats from cache
+[2025-10-19T19:36:07.567Z] Serving GitHub stats from cache
+[2025-10-19T19:36:07.576Z] Serving GitHub stats from cache
+[2025-10-19T19:36:54.843Z] Serving GitHub stats from cache
+[2025-10-19T19:36:54.848Z] Serving GitHub stats from cache
+[2025-10-19T19:38:03.403Z] Serving GitHub stats from cache
+[2025-10-19T19:38:03.425Z] Serving GitHub stats from cache
+[2025-10-19T19:57:39.462Z] Serving GitHub stats from cache
+[2025-10-19T19:57:39.491Z] Serving GitHub stats from cache
+[2025-10-19T19:58:15.485Z] GitHub stats actualizadas: {"repositories":28,"followers":0,"stars":2,"pullRequests":27,"contributions":27,"languages":[{"name":"Python","percent":23.849902438944063,"raw":6.439473658514897},{"name":"C","percent":23.76308568220198,"raw":6.416033134194534},{"name":"JavaScript","percent":13.923163250391504,"raw":3.759254077605706},{"name":"HTML","percent":6.7238893633629715,"raw":1.8154501281080022},{"name":"Kotlin","percent":3.7102816483366623,"raw":1.0017760450508988}],"languageMethod":"per-repo-average","reposConsidered":27,"recent":["PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/logica2025"],"topRepoStars":2,"avgStarsPerRepo":0,"openPRs":0,"currentStreak":0,"longestStreak":1}
+[2025-10-19T19:59:26.464Z] Serving GitHub stats from cache
+[2025-10-19T19:59:26.481Z] Serving GitHub stats from cache
+[2025-10-19T20:12:36.166Z] Serving GitHub stats from cache
+[2025-10-19T20:13:00.188Z] Serving GitHub stats from cache
+[2025-10-19T20:14:32.868Z] Serving GitHub stats from cache
+[2025-10-19T20:14:32.894Z] Serving GitHub stats from cache
+[2025-10-20T00:23:51.420Z] Error al obtener GitHub stats: STREAK_QUERY is not defined
+[2025-10-20T00:25:46.107Z] Error al obtener GitHub stats: getStreakStats is not defined
+[2025-10-20T00:27:07.658Z] Error al obtener GitHub stats: computeWeeklyStreak is not defined
+[2025-10-20T00:27:49.715Z] GitHub stats actualizadas: {"repositories":28,"followers":0,"stars":2,"pullRequests":27,"contributions":27,"languages":[{"name":"HTML","percent":46.70988936772067,"raw":998692},{"name":"JavaScript","percent":11.372057281459856,"raw":243143},{"name":"Python","percent":10.586537229300763,"raw":226348},{"name":"C","percent":10.076451984356014,"raw":215442},{"name":"PHP","percent":5.316841231875043,"raw":113678}],"languageMethod":"bytes-total","reposConsidered":27,"recent":["PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/logica2025"],"topRepoStars":2,"avgStarsPerRepo":0,"openPRs":0,"totalContributions":407,"currentStreak":{"start":"2025-12-31","end":"2025-12-31","length":0},"longestStreak":{"start":"2024-08-13","end":"2024-08-17","length":5}}
+[2025-10-20T00:33:34.433Z] Serving GitHub stats from cache
+[2025-10-20T00:36:46.295Z] Serving GitHub stats from cache
+[2025-10-20T00:36:46.313Z] Serving GitHub stats from cache
+[2025-10-20T00:39:03.899Z] Serving GitHub stats from cache
+[2025-10-20T00:39:03.908Z] Serving GitHub stats from cache
+[2025-10-20T02:04:17.808Z] Serving GitHub stats from cache
+[2025-10-20T02:04:42.556Z] Serving GitHub stats from cache
+[2025-10-20T02:05:12.353Z] Serving GitHub stats from cache
+[2025-10-20T02:05:59.054Z] Serving GitHub stats from cache
+[2025-10-20T02:09:05.578Z] GitHub stats actualizadas: {"repositories":28,"followers":0,"stars":2,"pullRequests":27,"contributions":27,"languages":[{"name":"HTML","percent":46.70988936772067,"raw":998692},{"name":"JavaScript","percent":11.372057281459856,"raw":243143},{"name":"Python","percent":10.586537229300763,"raw":226348},{"name":"C","percent":10.076451984356014,"raw":215442},{"name":"PHP","percent":5.316841231875043,"raw":113678}],"languageMethod":"bytes-total","reposConsidered":27,"recent":["PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/logica2025"],"topRepoStars":2,"avgStarsPerRepo":0,"openPRs":0,"totalContributions":407,"firstContribution":"2020-11-03","currentStreak":{"start":"2025-12-31","end":"2025-12-31","length":0},"longestStreak":{"start":"2024-08-13","end":"2024-08-17","length":5}}
+[2025-10-20T02:09:27.122Z] Serving GitHub stats from cache
+[2025-10-20T02:09:27.144Z] Serving GitHub stats from cache
+[2025-10-20T02:11:45.537Z] Serving GitHub stats from cache
+[2025-10-20T02:15:39.238Z] Serving GitHub stats from cache
+[2025-10-20T02:58:42.753Z] Serving GitHub stats from cache
+[2025-10-20T02:58:59.913Z] Serving GitHub stats from cache
+[2025-10-20T03:04:32.967Z] Serving GitHub stats from cache
+[2025-10-20T03:04:53.414Z] Serving GitHub stats from cache
+[2025-10-20T03:07:26.280Z] GitHub stats actualizadas: {"repositories":28,"followers":0,"stars":2,"pullRequests":27,"contributions":27,"languages":[{"name":"HTML","percent":46.70988936772067,"raw":998692},{"name":"JavaScript","percent":11.372057281459856,"raw":243143},{"name":"Python","percent":10.586537229300763,"raw":226348},{"name":"C","percent":10.076451984356014,"raw":215442},{"name":"PHP","percent":5.316841231875043,"raw":113678}],"languageMethod":"bytes-total","reposConsidered":27,"recent":["PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/logica2025"],"topRepoStars":2,"avgStarsPerRepo":0,"openPRs":0,"totalContributions":407,"firstContribution":"2020-11-03","currentStreak":{"start":"2025-12-31","end":"2025-12-31","length":0},"longestStreak":{"start":"2024-08-13","end":"2024-08-17","length":5}}
+[2025-10-20T03:09:09.927Z] GitHub stats actualizadas: {"repositories":28,"followers":0,"stars":2,"pullRequests":27,"contributions":27,"languages":[{"name":"HTML","percent":46.70988936772067,"raw":998692},{"name":"JavaScript","percent":11.372057281459856,"raw":243143},{"name":"Python","percent":10.586537229300763,"raw":226348},{"name":"C","percent":10.076451984356014,"raw":215442},{"name":"PHP","percent":5.316841231875043,"raw":113678}],"languageMethod":"bytes-total","reposConsidered":27,"recent":["PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/logica2025"],"topRepoStars":2,"avgStarsPerRepo":0,"openPRs":0,"totalContributions":407,"firstContribution":"2020-11-03","currentStreak":{"start":"2025-12-31","end":"2025-12-31","length":0},"longestStreak":{"start":"2024-08-13","end":"2024-08-17","length":5}}
+[2025-10-20T03:13:44.959Z] GitHub stats actualizadas: {"repositories":28,"followers":0,"stars":2,"pullRequests":27,"contributions":27,"languages":[{"name":"HTML","percent":46.70988936772067,"raw":998692},{"name":"JavaScript","percent":11.372057281459856,"raw":243143},{"name":"Python","percent":10.586537229300763,"raw":226348},{"name":"C","percent":10.076451984356014,"raw":215442},{"name":"PHP","percent":5.316841231875043,"raw":113678}],"languageMethod":"bytes-total","reposConsidered":27,"recent":["PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/logica2025"],"topRepoStars":2,"avgStarsPerRepo":0,"openPRs":0,"totalContributions":407,"firstContribution":"2020-11-03","currentStreak":{"start":"2025-12-31","end":"2025-12-31","length":0},"longestStreak":{"start":"2024-08-13","end":"2024-08-17","length":5}}
+[2025-10-20T03:52:41.220Z] GitHub stats actualizadas: {"repositories":28,"followers":0,"stars":2,"pullRequests":27,"contributions":27,"languages":[{"name":"HTML","percent":46.70988936772067,"raw":998692},{"name":"JavaScript","percent":11.372057281459856,"raw":243143},{"name":"Python","percent":10.586537229300763,"raw":226348},{"name":"C","percent":10.076451984356014,"raw":215442},{"name":"PHP","percent":5.316841231875043,"raw":113678}],"languageMethod":"bytes-total","reposConsidered":27,"recent":["PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/logica2025"],"topRepoStars":2,"avgStarsPerRepo":0,"openPRs":0,"totalContributions":407,"firstContribution":"2020-11-03","currentStreak":{"start":"2025-12-31","end":"2025-12-31","length":0},"longestStreak":{"start":"2024-08-13","end":"2024-08-17","length":5}}
+[2025-10-20T03:59:14.055Z] GitHub stats actualizadas: {"repositories_total":28,"public_repos":28,"repositories":28,"followers":0,"stars":2,"pullRequests":27,"contributions":27,"languages":[{"name":"HTML","percent":46.70988936772067,"raw":998692},{"name":"JavaScript","percent":11.372057281459856,"raw":243143},{"name":"Python","percent":10.586537229300763,"raw":226348},{"name":"C","percent":10.076451984356014,"raw":215442},{"name":"PHP","percent":5.316841231875043,"raw":113678}],"languageMethod":"bytes-total","reposConsidered":27,"recent":["PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/logica2025"],"topRepoStars":2,"avgStarsPerRepo":0,"openPRs":0,"totalContributions":407,"firstContribution":"2020-11-03","currentStreak":{"start":"2025-12-31","end":"2025-12-31","length":0},"longestStreak":{"start":"2024-08-13","end":"2024-08-17","length":5}}
+[2025-10-20T04:05:26.186Z] GitHub stats actualizadas: {"repositories_total":28,"public_repos":28,"repositories":28,"followers":0,"stars":2,"pullRequests":27,"contributions":27,"languages":[{"name":"HTML","percent":46.70988936772067,"raw":998692},{"name":"JavaScript","percent":11.372057281459856,"raw":243143},{"name":"Python","percent":10.586537229300763,"raw":226348},{"name":"C","percent":10.076451984356014,"raw":215442},{"name":"PHP","percent":5.316841231875043,"raw":113678}],"languageMethod":"bytes-total","reposConsidered":27,"recent":["PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/logica2025"],"topRepoStars":2,"avgStarsPerRepo":0,"openPRs":0,"totalContributions":407,"firstContribution":"2020-11-03","currentStreak":{"start":"2025-12-31","end":"2025-12-31","length":0},"longestStreak":{"start":"2024-08-13","end":"2024-08-17","length":5}}
+[2025-10-20T04:34:08.308Z] Serving GitHub stats from cache
+[2025-10-20T04:34:08.330Z] Serving GitHub stats from cache
+[2025-10-20T04:35:29.484Z] GitHub stats actualizadas: {"repositories_total":28,"public_repos":28,"repositories":28,"followers":0,"stars":2,"pullRequests":27,"mergedPullRequests":24,"closedPullRequests":3,"contributions":27,"languages":[{"name":"Python","percent":23.849902438944063,"raw":6.439473658514897},{"name":"C","percent":23.76308568220198,"raw":6.416033134194534},{"name":"JavaScript","percent":13.923163250391504,"raw":3.759254077605706},{"name":"HTML","percent":6.7238893633629715,"raw":1.8154501281080022},{"name":"Kotlin","percent":3.7102816483366623,"raw":1.0017760450508988}],"languageMethod":"per-repo-average","reposConsidered":27,"recent":["PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/Portafolio","PushEvent @ cromx123/logica2025"],"topRepoStars":2,"avgStarsPerRepo":0,"openPRs":0,"totalContributions":407,"firstContribution":"2020-11-03","currentStreak":{"start":"2025-12-31","end":"2025-12-31","length":0},"longestStreak":{"start":"2024-08-13","end":"2024-08-17","length":5}}
+[2025-10-20T04:36:06.814Z] Serving GitHub stats from cache
+[2025-10-20T04:36:06.831Z] Serving GitHub stats from cache
