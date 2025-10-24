@@ -9,10 +9,10 @@ export default function Navbar() {
   const { t, i18n } = useTranslation();
 
   const links = [
-    { name: "home", href: "#hero" },
-    { name: "projects", href: "#proyectos" },
-    { name: "skills", href: "#skills" },
-    { name: "contact", href: "#contact" },
+    { name: "common.nav.home", href: "#hero" },
+    { name: "common.nav.projects", href: "#proyectos" },
+    { name: "common.nav.skills", href: "#skills" },
+    { name: "common.nav.contact", href: "#contact" },
   ];
 
   return (

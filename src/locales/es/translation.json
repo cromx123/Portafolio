@@ -1,8 +1,100 @@
 {
-  "home": "Inicio",
-  "projects": "Proyectos",
-  "skills": "Habilidades",
-  "contact": "Contacto",
-  "language": "Idioma",
-  "theme": "Tema"
+    "common": {
+        "nav": {
+            "home": "Inicio",
+            "projects": "Proyectos",
+            "skills": "Habilidades",
+            "contact": "Contacto"
+        },
+        "buttons": {
+            "seeMore": "Ver más",
+            "viewProject": "Ver proyecto",
+            "back": "Volver"
+        }
+    },
+    "home": {
+        "hero": {
+            "title": "Hola, soy",
+            "subtitle": "Desarrollador Fullstack con pasión por construir aplicaciones web. Me especializo en React, Dockers, Node.js y TypeScript.",
+            "cta": "Proyectos",
+            "dwnldCv": "Descargar CV"
+        },
+        "skills": {
+            "title": "Habilidades"
+        },
+        "projects": {
+            "title": "Proyectos Destacados",
+            "subtitle": "Algunos de los proyectos en los que ha trabajado recientemente."
+        },
+        "github": {
+            "title": "Estadisticas de GitHub",
+            "subtitle": "Siguiendo mi camino en el código abierto",
+            "tabs": {
+                "overview": "Resumen",
+                "activity": "Actividad",
+                "insights": "Perspectivas"
+            },
+            "followers": "Seguidores",
+            "community": "Comunidad",
+            "stars": "Estrellas",
+            "repositories": "Repositorios",
+            "languages": "Lenguajes",
+            "events": "Eventos recientes",
+            "events_no_data": "No hay eventos recientes.",
+            "error_loading": "Error al cargar las estadísticas de GitHub.",
+            "loading": "Cargando estadísticas…"
+
+        },
+        "contact": {
+            "title": "Contacto",
+            "subtitle_left": "Información de Contacto",
+            "description": "¿Tienes un concepto inacabado o una idea a medio mapear? 🧠 Convirtámoslo en una interfaz del mundo real que realmente se sienta viva.",
+            "subtitle_right": "Enviar Transmisión",
+            "name": "Tu Nombre*",
+            "email": "Tu Correo*",
+            "subject": "Asunto",
+            "message": "Tu Mensaje",
+            "send": "Enviar Correo"
+        },
+        "socialmedia":{ 
+            "title": "Redes Sociales"
+        },
+        "footer":{
+            "description": "CromxDev - Todos los derechos reservados."
+        }
+    },
+    "projects": {
+        "aquaWeb": {
+            "title": "AquaWeb",
+            "description": "Ecommerce para la venta y gestión de garrafones de agua."
+        },
+        "magicGourtmet": {
+            "title": "Magic Gourmet",
+            "description": "Plataforma web culinaria para recetas, reservas y descubrimiento de eventos."
+        },
+        "crawlerApi": {
+            "title": "Crawler Api",
+            "description": "Plataforma de análisis de datos de YouTube utilizando API, scraping, visualización y herramientas de exportación."
+        },
+        "sendLove": {
+            "title": "Send Love",
+            "description": "Juego casual para Android con Firebase, clasificaciones en tiempo real y jugabilidad divertida."
+        },
+        "humanidades": {
+            "title": "Humanidades 360°",
+            "description": "Aplicación web para explorar y gestionar los espacios del campus a través de un mapa interactivo."
+        },
+        "tesis": {
+            "title": "Plataforma de Análisis de Datos Médicos (SSMN)",
+            "description": "Plataforma para el Servicio de Salud Metropolitano Norte con modelos predictivos y de clustering que apoyan la investigación médica."
+        },
+        "portafolio": {
+            "title": "Portafolio",
+            "description": "Portafolio es una plataforma web que permite a los profesionales creativos mostrar su trabajo y habilidades. Proporciona una interfaz atractiva y fácil de usar para que los usuarios puedan crear y compartir sus portafolios en línea."
+        },
+        "githubFinder": {
+            "title": "Ver todos los proyectos en GitHub"
+        }
+    }
+
 }

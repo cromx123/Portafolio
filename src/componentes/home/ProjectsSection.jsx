@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 export default function ProjectsSection({ projects, onNavigate }) {
+  const { t } = useTranslation();
+
   return (
     <motion.section
       id="proyectos"
@@ -11,10 +14,10 @@ export default function ProjectsSection({ projects, onNavigate }) {
     >
       {/* Título */}
       <h2 className="text-5xl font-bold text-center mb-6 text-pink-400 tracking-widest neon-text">
-        ProJects
+        {t("home.projects.title")}
       </h2>
       <p className="text-center text-sm text-gray-400 mb-16">
-        Some of the projects he has worked on recently.
+        {t("home.projects.subtitle")}
       </p>
 
       {/* Grid de proyectos */}

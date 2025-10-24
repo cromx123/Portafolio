@@ -1,6 +1,8 @@
 import { motion } from "framer-motion"
+import { useTranslation } from 'react-i18next';
 
 export default function ContactSection() {
+  const { t } = useTranslation();
   return (
     <motion.section
       id="contact"
@@ -11,7 +13,7 @@ export default function ContactSection() {
       viewport={{ once: true }}
     >
       <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center tracking-widest neon-text">
-        Contact
+        {t("home.contact.title")}
       </h2>
 
       <div className="grid md:grid-cols-2 gap-10">
@@ -34,12 +36,12 @@ export default function ContactSection() {
           </div>
 
           <h4 className="text-xl font-semibold mb-2 text-white">
-            Contact Info
+            {t("home.contact.subtitle_left")}
           </h4>
 
           <div className="text-sm leading-relaxed text-gray-300">
             <p>
-              Got an unfinished concept or a half-mapped idea?🧠 Let’s turn it into a real-world interface that actually feels alive.
+              {t("home.contact.description")}
             </p>
           </div>
 
@@ -58,27 +60,27 @@ export default function ContactSection() {
         {/* Panel Derecho */}
         <div className="bg-black/40 border-2 border-cyan-400 rounded-xl p-6 backdrop-blur-sm shadow-[0_0_20px_rgba(0,255,255,0.4)]">
           <h4 className="text-xl font-semibold mb-4 text-white tracking-widest">
-            Send Transmission
+            {t("home.contact.subtitle_right")}
           </h4>
 
           <form className="space-y-4">
             <input
               type="text"
-              placeholder="Your name*"
+              placeholder={t("home.contact.name")}
               className="w-full bg-transparent border border-cyan-500 p-3 rounded text-white placeholder-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-400"
             />
             <input
               type="email"
-              placeholder="Your email"
+              placeholder={t("home.contact.email")}
               className="w-full bg-transparent border border-cyan-500 p-3 rounded text-white placeholder-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-400"
             />
             <input
               type="text"
-              placeholder="Subject"
+              placeholder={t("home.contact.subject")}
               className="w-full bg-transparent border border-cyan-500 p-3 rounded text-white placeholder-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-400"
             />
             <textarea
-              placeholder="Message..."
+              placeholder={t("home.contact.message")}
               rows="4"
               className="w-full bg-transparent border border-cyan-500 p-3 rounded text-white placeholder-cyan-300 focus:outline-none focus:ring-2 focus:ring-cyan-400"
             ></textarea>
@@ -87,7 +89,7 @@ export default function ContactSection() {
               type="submit"
               className="w-full bg-cyan-400 text-black font-bold py-3 rounded hover:bg-cyan-300 transition-all shadow-[0_0_15px_rgba(0,255,255,0.5)]"
             >
-              Send Mail
+              {t("home.contact.send")}
             </button>
           </form>
         </div>

@@ -1,7 +1,9 @@
 import { motion } from "framer-motion"
 import { CodeSquare, ToolCase, Wallpaper } from "lucide-react"
+import { useTranslation } from 'react-i18next';
 
 export default function ServicesSection() {
+  const { t } = useTranslation();
   const skills = [
     {
       title: "Frontend",
@@ -59,7 +61,7 @@ export default function ServicesSection() {
       viewport={{ once: true }}
     >
       <h2 className="text-4xl md:text-5xl font-bold text-pink-400 mb-12 pixel-font">
-        Skills
+        {t("home.skills.title")}
       </h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-8xl max-auto">

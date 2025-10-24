@@ -1,9 +1,9 @@
 {
-  "timestamp": 1760934929484,
+  "timestamp": 1761292957257,
   "data": {
-    "repositories_total": 28,
-    "public_repos": 28,
-    "repositories": 28,
+    "repositories_total": 29,
+    "public_repos": 29,
+    "repositories": 29,
     "followers": 0,
     "stars": 2,
     "pullRequests": 27,
@@ -13,33 +13,36 @@
     "languages": [
       {
         "name": "Python",
-        "percent": 23.849902438944063,
+        "percent": 22.998120208981774,
         "raw": 6.439473658514897
       },
       {
         "name": "C",
-        "percent": 23.76308568220198,
-        "raw": 6.416033134194534
+        "percent": 22.976901419226618,
+        "raw": 6.433532397383453
       },
       {
         "name": "JavaScript",
-        "percent": 13.923163250391504,
-        "raw": 3.759254077605706
+        "percent": 13.444661697385301,
+        "raw": 3.7645052752678847
       },
       {
         "name": "HTML",
-        "percent": 6.7238893633629715,
-        "raw": 1.8154501281080022
+        "percent": 6.523425564674036,
+        "raw": 1.8265591581087302
       },
       {
         "name": "Kotlin",
-        "percent": 3.7102816483366623,
-        "raw": 1.0017760450508988
+        "percent": 3.583297672579786,
+        "raw": 1.00332334832234
       }
     ],
     "languageMethod": "per-repo-average",
-    "reposConsidered": 27,
+    "reposConsidered": 28,
     "recent": [
+      "PushEvent @ cromx123/Portafolio",
+      "PushEvent @ cromx123/Portafolio",
+      "PublicEvent @ cromx123/gestionar_mapas",
       "PushEvent @ cromx123/Portafolio",
       "PushEvent @ cromx123/Portafolio",
       "PushEvent @ cromx123/Portafolio",
@@ -51,7 +54,7 @@
     "topRepoStars": 2,
     "avgStarsPerRepo": 0,
     "openPRs": 0,
-    "totalContributions": 407,
+    "totalContributions": 411,
     "firstContribution": "2020-11-03",
     "currentStreak": {
       "start": "2025-12-31",

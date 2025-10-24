@@ -1,8 +1,100 @@
 {
-  "home": "Home",
-  "projects": "Projects",
-  "skills": "Skills",
-  "contact": "Contact",
-  "language": "Language",
-  "theme": "Theme"
+    "common": {
+        "nav": {
+            "home": "Home",
+            "projects": "Projects",
+            "skills": "Skills",
+            "contact": "Contact"
+        },
+        "buttons": {
+            "seeMore": "See more",
+            "viewProject": "View project",
+            "back": "Back"
+        }
+    },
+    "home": {
+        "hero": {
+            "title": "Hi, I'm",
+            "subtitle": "Fullstack developer with a passion for building web applications. I specialize in React, Dockers, Node.js, and TypeScript.",
+            "cta": "Projects",
+            "dwnldCv": "Download resume"
+        },
+        "skills": {
+            "title": "Skills"
+        },
+        "projects": {
+            "title": "Featured Projects",
+            "subtitle": "Some of the projects he has worked on recently."
+        },
+        "github": {
+            "title": "GitHub Statistics",
+            "subtitle": "Tracking my open source journey",
+            "tabs": {
+                "overview": "Overview",
+                "activity": "Activity",
+                "insights": "Insights"
+            },
+            "followers": "Followers",
+            "community": "Community",
+            "stars": "Stars",
+            "repositories": "Repositories",
+            "languages": "Languages",
+            "events": "Recent Events",
+            "events_no_data": "No recent events.",
+            "error_loading": "Error loading GitHub statistics.",
+            "loading": "Loading statistics…"
+        },
+        "contact": {
+            "title": "Contact",
+            "subtitle_left": "Contact Info",
+            "description": "Got an unfinished concept or a half-mapped idea?🧠 Let’s turn it into a real-world interface that actually feels alive.",
+            "subtitle_right": "Send Transmission",
+            "name": "Your Name*",
+            "email": "Your Email*",
+            "subject": "Subject",
+            "message": "Your Message",
+            "send": "Send Mail"
+        },
+        "socialmedia": {
+            "title": "Social Media"
+        },
+        "footer":{
+            "description": "CromxDev - all rights reserved."
+        }
+    },
+    "projects": {
+        "aquaWeb": {
+            "title": "AquaWeb",
+            "description": "Ecommerce platform for selling and managing water jugs."
+        },
+        "magicGourtmet": {
+            "title": "Magic Gourmet",
+            "description": "Culinary web platform for recipes, reservations, and event discovery."
+        },
+        "crawlerApi": {
+            "title": "Crawler Api",
+            "description": "YouTube data analysis platform using API, scraping, visualization, and export tools."
+        },
+        "sendLove": {
+            "title": "Send Love",
+            "description": "Casual Android game with Firebase, real-time rankings, and fun gameplay."
+        },
+        "humanidades": {
+            "title": "Humanidades 360°",
+            "description": "Web app for exploring and managing campus spaces via interactive map."
+        },
+        "tesis": {
+            "title": "Medical Data Analysis Platform (SSMN)",
+            "description": "Platform for the Metropolitan North Health Service with predictive and clustering models supporting medical research."
+        },
+        "portafolio": {
+            "title": "Portfolio",
+            "description": "This portfolio website showcases my skills, projects, and experiences as a fullstack developer. It serves as a platform to highlight my work and connect with potential clients and collaborators."
+        },
+        "githubFinder": {
+            "title": "View all projects on GitHub"
+        }
+
+    }
+
 }

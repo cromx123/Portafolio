@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 // Importa las imágenes de los proyectos
 import aquaWeb from "./assets/aquaWeb_home.png";
@@ -26,6 +27,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const HomePage = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation();
 
   useEffect(() => {
     document.title = "Portafolio CromxDev";
@@ -36,13 +38,13 @@ const HomePage = () => {
   };
 
   const projects = [
-        { img: aquaWeb, title: "AquaWeb",desc: "Ecommerce platform for selling and managing water jugs.", path: "/ProyectoAqua" },
-        { img: magicGourmet, title: "Magic Gourmet", desc:"Culinary web platform for recipes, reservations, and event discovery.", path: "/ProyectoMagic" },
-        { img: crawler, title: "CRAWLER", desc: "YouTube data analysis platform using API, scraping, visualization, and export tools.", path: "/ProyectoCrawler" },
-        { img: sendLove, title: "SEND LOVE", desc:"Casual Android game with Firebase, real-time rankings, and fun gameplay.", path: "/ProyectoSendLove" },
-        { img: humanidades, title: "Humanidades 360°", desc: "Web app for exploring and managing campus spaces via interactive map.", path: "/ProyectoHumanidades" },
-        { img: tesis, title: "Medical Data Analysis Platform (SSMN)", desc: "Platform for the Metropolitan North Health Service with predictive and clustering models supporting medical research.", path: "/ProyectoTesis"},
-        { img: github, title: "View all projects on GitHub", desc: " ", path: "https://github.com/cromx123"},
+        { img: aquaWeb, title: t("projects.aquaWeb.title"),desc: t("projects.aquaWeb.description"), path: "/ProyectoAqua" },
+        { img: magicGourmet, title: t("projects.magicGourtmet.title"), desc: t("projects.magicGourtmet.description"), path: "/ProyectoMagic" },
+        { img: crawler, title: t("projects.crawlerApi.title"), desc: t("projects.crawlerApi.description"), path: "/ProyectoCrawler" },
+        { img: sendLove, title: t("projects.sendLove.title"), desc: t("projects.sendLove.description"), path: "/ProyectoSendLove" },
+        { img: humanidades, title: t("projects.humanidades.title"), desc: t("projects.humanidades.description"), path: "/ProyectoHumanidades" },
+        { img: tesis, title: t("projects.tesis.title"), desc: t("projects.tesis.description"), path: "/ProyectoTesis"},
+        { img: github, title: t("projects.githubFinder.title"), desc: " ", path: "https://github.com/cromx123"},
     ];
 
   return (

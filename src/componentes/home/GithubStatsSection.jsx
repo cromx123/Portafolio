@@ -1,5 +1,6 @@
 // StatsSection.jsx (JSX puro)
 import React, { useEffect, useMemo, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   BarChart3,
@@ -31,9 +32,11 @@ import {
 
 import { formatRange } from "../../utils/formatDate.jsx";
 
+
 const ENDPOINT =
   process.env.REACT_APP_GITHUB_STATS_URL ||
-  process.env.NEXT_PUBLIC_GITHUB_STATS_URL;
+  process.env.NEXT_PUBLIC_GITHUB_STATS_URL ||
+  "http://localhost:3002/api/github";
 
 const TABS = [
   { title: "Overview", icon: BarChart3 },
@@ -116,6 +119,7 @@ function Overview({ data }) {
     Dockerfile: "#384d54",
     default: "#999999",
   };
+  const { t } = useTranslation();
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
@@ -200,14 +204,14 @@ function Overview({ data }) {
             <div className="text-3xl font-bold">
               <NumberTicker value={data?.followers ?? 0} />
             </div>
-            <p className="text-xs text-white/60">followers</p>
+            <p className="text-xs text-white/60">{t("home.github.followers")}</p>
           </Card>
         </motion.div>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
           <Card>
             <div className="mb-4 flex items-center justify-between">
-              <h3 className="font-semibold">Languages</h3>
+              <h3 className="font-semibold">{t("home.github.languages")}</h3>
               <div className="rounded-lg border border-white/10 bg-white/10 p-2">
                 <Code2 className="h-4 w-4 text-white/60" />
               </div>
@@ -271,7 +275,7 @@ function ActivityTab({ data }) {
     }));
   }, [data]);
 
-
+  const { t } = useTranslation();
   return (
     <div className="space-y-6">
       <Card className="overflow-x-auto">
@@ -322,7 +326,7 @@ function ActivityTab({ data }) {
       <Card>
         <div className="mb-3 flex items-center gap-2">
           <CalendarDays className="h-4 w-4 text-white/60" />
-          <h3 className="font-semibold">Recent Events</h3>
+          <h3 className="font-semibold">{t("home.github.events")}</h3>
         </div>
         <ul className="space-y-2 text-sm text-white/80">
           {(data?.recent || []).slice(0, 10).map((line, i) => (
@@ -332,7 +336,7 @@ function ActivityTab({ data }) {
             </li>
           ))}
           {!data?.recent?.length && (
-            <li className="text-white/50">Sin eventos recientes.</li>
+            <li className="text-white/50">{t("home.github.events_no_data")}</li>
           )}
         </ul>
       </Card>
@@ -371,7 +375,7 @@ function Insights({ data }) {
       breakdown: `${data?.openIssues || 0} open, ${data?.closedIssues || 0} closed`,
     },
   ];
-
+  const { t } = useTranslation();
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
@@ -457,17 +461,19 @@ function Insights({ data }) {
 
 /* ----------------------- CONTENEDOR ----------------------- */
 function Loading() {
+  const { t } = useTranslation();
   return (
     <div className="flex min-h-[300px] items-center justify-center text-white/70">
-      Cargando estadísticas…
+      {t("home.github.loading")}
     </div>
   );
 }
 function ErrorState({ message }) {
+  const { t } = useTranslation();
   return (
     <div className="flex min-h-[300px] flex-col items-center justify-center text-center">
       <AlertCircle className="mb-2 h-8 w-8 text-rose-400" />
-      <p className="text-sm font-medium">No se pudieron cargar las estadísticas</p>
+      <p className="text-sm font-medium">{t("home.github.error_loading")}</p>
       <p className="mt-1 text-xs text-white/60">{message}</p>
     </div>
   );
@@ -515,7 +521,7 @@ export default function StatsSection() {
         return null;
     }
   };
-
+  const { t } = useTranslation();
   return (
     <section
       id="stats"
@@ -529,8 +535,8 @@ export default function StatsSection() {
       <div className="pointer-events-none absolute inset-0 -z-10 opacity-20 [background-image:linear-gradient(rgba(255,255,255,.06)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.06)_1px,transparent_1px)] [background-size:24px_24px]" />
 
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="mb-8 text-center">
-        <h2 className="text-3xl md:text-4xl text-pink-400 font-semibold">GitHub Statistics</h2>
-        <p className="mt-2 text-gray-200">Tracking my open source journey</p>
+        <h2 className="text-3xl md:text-4xl text-pink-400 font-semibold">{t("home.github.title")}</h2>
+        <p className="mt-2 text-gray-200">{t("home.github.subtitle")}</p>
       </motion.div>
 
       {/* Tabs */}

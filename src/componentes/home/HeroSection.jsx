@@ -1,7 +1,9 @@
 import { motion } from "framer-motion"
 import { Download } from "lucide-react"
+import { useTranslation } from 'react-i18next';
 
 export default function HeroSection() {
+  const { t } = useTranslation();
   return (
     <section
       id="hero"
@@ -42,7 +44,7 @@ export default function HeroSection() {
         transition={{ duration: 1.2 }}
       >
         <p className="text-pink-400 font-mono tracking-widest text-lg">
-          Hi, I’m
+          {t("home.hero.title")}
         </p>
 
         <h1 className="text-5xl md:text-7xl font-extrabold pixel-font text-white drop-shadow-[0_0_25px_#ff00ff]">
@@ -50,7 +52,7 @@ export default function HeroSection() {
         </h1>
 
         <p className="max-w-2xl text-gray-400 text-md md:text-lg leading-relaxed">
-          Fullstack developer with a passion for building web applications. I specialize in React, Dockers, Node.js, and TypeScript.
+          {t("home.hero.subtitle")}
         </p>
 
         <div className="mt-8 flex flex-wrap gap-4">
@@ -58,7 +60,7 @@ export default function HeroSection() {
             href="#proyectos"
             className="mt-6 px-6 py-3 bg-pink-500 hover:bg-pink-600 text-white rounded-lg font-mono shadow-[0_0_15px_#ff00ff] hover:shadow-[0_0_25px_#ff00ff] transition-all"
           >
-            Projects
+            {t("home.hero.cta")}
           </a>
 
           <a
@@ -66,7 +68,7 @@ export default function HeroSection() {
             className="mt-6 px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg font-mono shadow-[0_0_15px_#00ffff] hover:shadow-[0_0_25px_#00ffff] transition-all flex items-center gap-2"
           >
             <Download className="w-5 h-5 text-white" />
-            Download resume
+            {t("home.hero.dwnldCv")}
           </a>
         </div>
       </motion.div>
