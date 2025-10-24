@@ -7,6 +7,7 @@ import magicGourmet from "./assets/magicGourmet_home.png";
 import crawler from "./assets/modulo_youtube.png";
 import sendLove from "./assets/sendLove.png";
 import humanidades from "./assets/humanidades.png";
+import tesis from "./assets/medical_dashboard.png";
 import github from "./assets/github_icon.png";
 
 
@@ -40,6 +41,7 @@ const HomePage = () => {
         { img: crawler, title: "CRAWLER", desc: "YouTube data analysis platform using API, scraping, visualization, and export tools.", path: "/ProyectoCrawler" },
         { img: sendLove, title: "SEND LOVE", desc:"Casual Android game with Firebase, real-time rankings, and fun gameplay.", path: "/ProyectoSendLove" },
         { img: humanidades, title: "Humanidades 360°", desc: "Web app for exploring and managing campus spaces via interactive map.", path: "/ProyectoHumanidades" },
+        { img: tesis, title: "Medical Data Analysis Platform (SSMN)", desc: "Platform for the Metropolitan North Health Service with predictive and clustering models supporting medical research.", path: "/ProyectoTesis"},
         { img: github, title: "View all projects on GitHub", desc: " ", path: "https://github.com/cromx123"},
     ];
 

@@ -27,7 +27,7 @@ const ProyectoAqua = () => {
         completado: "Diciembre 2023",
       }}
       glowColor="rgba(100,200,255,0.3)"
-      rutaAnterior="/ProyectoHumanidades"
+      rutaAnterior="/ProyectoTesis"
       rutaSiguiente="/ProyectoMagic"
     />
   );

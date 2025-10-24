@@ -13,6 +13,8 @@ export default function ServicesSection() {
         ["React", "https://img.icons8.com/?size=100&id=Y8UPqrI8Yp7V&format=png&color=02DBF9"],
         ["Flutter", "https://img.icons8.com/?size=100&id=7I3BjCqe9rjG&format=png&color=FFFFFF"],
         ["Dart", "https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg"],
+        ["TypeScript", "https://img.icons8.com/?size=100&id=uJM6fQYqDaZK&format=png&color=000000"],
+        ["Kotlin", "https://img.icons8.com/?size=100&id=ZoxjA0jZDdFZ&format=png&color=000000"],
       ],
     },
     {
@@ -24,6 +26,11 @@ export default function ServicesSection() {
         ["Python", "https://img.icons8.com/?size=100&id=lXPUSRCongH1&format=png&color=FFFFFF"],
         ["PHP", "https://img.icons8.com/?size=100&id=XNQU0Xcm2I9s&format=png&color=FFFFFF"],
         ["MySQL", "https://img.icons8.com/?size=100&id=9nLaR5KFGjN0&format=png&color=FFFFFF"],
+        ["Java", "https://img.icons8.com/?size=100&id=13679&format=png&color=000000"],
+        ["R", "https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000"],
+        ["Cuda", "https://img.icons8.com/?size=100&id=yqf95864UzeQ&format=png&color=000000"],
+        ["FastAPI", "https://icon.icepanel.io/Technology/svg/FastAPI.svg"],
+        ["NodeJS", "https://img.icons8.com/?size=100&id=54087&format=png&color=FFFFFF"],
       ],
     },
     {
@@ -36,6 +43,8 @@ export default function ServicesSection() {
         ["Android", "https://img.icons8.com/?size=100&id=04OFrkjznvcd&format=png&color=FFFFFF"],
         ["Play Store", "https://img.icons8.com/?size=100&id=rZwnRdJyYqRi&format=png&color=FFFFFF"],
         ["Tensorflow", "https://img.icons8.com/?size=100&id=n3QRpDA7KZ7P&format=png&color=FFFFFF"],
+        ["Shell", "https://img.icons8.com/?size=100&id=boivBIyqEOus&format=png&color=000000"],
+        ["MongoDB", "https://img.icons8.com/?size=100&id=8rKdRqZFLurS&format=png&color=000000"],
       ],
     },
   ];
@@ -50,7 +59,7 @@ export default function ServicesSection() {
       viewport={{ once: true }}
     >
       <h2 className="text-4xl md:text-5xl font-bold text-pink-400 mb-12 pixel-font">
-        Habilidades
+        Skills
       </h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-8xl max-auto">

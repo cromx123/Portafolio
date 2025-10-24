@@ -6,6 +6,7 @@ import ProyectoMagic from "./componentes/Proyectos/ProyectoMagic";
 import ProyectoCrawler from "./componentes/Proyectos/ProyectoCrawler";
 import ProyectoSendLove from "./componentes/Proyectos/ProyectoSendlove";
 import ProyectoHumanidades360 from "./componentes/Proyectos/ProyectoHumanidades";
+import ProyectoTesis from "./componentes/Proyectos/ProyectoTesis";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/ProyectoCrawler" element={<ProyectoCrawler />} />
         <Route path="/ProyectoSendLove" element={<ProyectoSendLove />} />
         <Route path="/ProyectoHumanidades" element={<ProyectoHumanidades360 />} />
+        <Route path="/ProyectoTesis" element={<ProyectoTesis />} />
         <Route path="*" element={<h1>404 - Página no encontrada</h1>} /> {/* Ruta por defecto */}
       </Routes>
     </Router>

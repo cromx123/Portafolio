@@ -1,16 +1,18 @@
 import { useState } from "react";
 import { Menu, X, Github, Sun, Moon} from "lucide-react";
 import { motion} from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(true);
+  const { t, i18n } = useTranslation();
 
   const links = [
-    { name: "Home", href: "#hero" },
-    { name: "Projects", href: "#proyectos" },
-    { name: "Skills", href: "#skills" },
-    { name: "Contact", href: "#contact" },
+    { name: "home", href: "#hero" },
+    { name: "projects", href: "#proyectos" },
+    { name: "skills", href: "#skills" },
+    { name: "contact", href: "#contact" },
   ];
 
   return (
@@ -33,7 +35,7 @@ export default function Navbar() {
               href={link.href}
               className="text-white hover:text-pink-400 transition-all"
             >
-              {link.name}
+              {t(link.name)}
             </a>
           ))}
         </div>
@@ -43,6 +45,9 @@ export default function Navbar() {
           <a href="https://github.com/cromx123" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400">
             <Github className="w-5 h-5" />
           </a>
+          <button onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en')} className="hover:text-pink-400">
+            {i18n.language === 'en' ? 'ES' : 'EN'}
+          </button>
           <button onClick={() => setDarkMode(darkMode === "dark" ? "light" : "dark")} className="hover:text-pink-400">
             {darkMode === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
           </button>
