@@ -22,20 +22,20 @@ export default function ProjectsSection({ projects, onNavigate }) {
 
       {/* Grid de proyectos */}
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto px-6">
-        {projects.map(({ img, title, tag, desc, path }, index) => (
-          <motion.div
-            key={title}
-            onClick={() => {
-                if (path.startsWith("http")) {
-                    window.open(path, "_blank");
+        {projects.map(({ id, img, title, tag, desc, external, url }, index) => (
+            <motion.div
+              key={id}
+              onClick={() => {
+                if (external) {
+                  window.open(url, "_blank");
                 } else {
-                    onNavigate(path);
+                  onNavigate(`/proyecto/${id}`);
                 }
-            }}
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 200 }}
-            className="cursor-pointer bg-gradient-to-b from-slate-900/80 to-slate-800/60 border border-pink-500/30 rounded-xl p-5 hover:border-pink-400 shadow-[0_0_20px_rgba(255,0,150,0.2)] backdrop-blur-sm group"
-          >
+              }}
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 200 }}
+              className="cursor-pointer bg-gradient-to-b from-slate-900/80 to-slate-800/60 border border-pink-500/30 rounded-xl p-5 hover:border-pink-400 shadow-[0_0_20px_rgba(255,0,150,0.2)] backdrop-blur-sm group"
+            >
             {/* Tag superior */}
             <div className="flex justify-between items-center mb-4 text-xs text-gray-400">
               <span className="border border-pink-400/40 px-2 py-1 rounded-md uppercase tracking-wider text-pink-400">

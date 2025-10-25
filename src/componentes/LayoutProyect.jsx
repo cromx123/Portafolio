@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import GlowBackground from "./Detalles/glow";
+import FooterSection from "../componentes/home/FooterSection";
 
 const ProyectoLayout = ({
 
@@ -121,9 +122,7 @@ const ProyectoLayout = ({
       </main>
 
       {/* Footer */}
-      <footer className="p-6 text-center border-t border-white/10 mt-16 text-white/50">
-        © 2025 CromxDev - Todos los derechos reservados.
-      </footer>
+      <FooterSection/>
     </GlowBackground>
   );
 };

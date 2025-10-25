@@ -38,13 +38,13 @@ const HomePage = () => {
   };
 
   const projects = [
-        { img: aquaWeb, title: t("projects.aquaWeb.title"),desc: t("projects.aquaWeb.description"), path: "/ProyectoAqua" },
-        { img: magicGourmet, title: t("projects.magicGourtmet.title"), desc: t("projects.magicGourtmet.description"), path: "/ProyectoMagic" },
-        { img: crawler, title: t("projects.crawlerApi.title"), desc: t("projects.crawlerApi.description"), path: "/ProyectoCrawler" },
-        { img: sendLove, title: t("projects.sendLove.title"), desc: t("projects.sendLove.description"), path: "/ProyectoSendLove" },
-        { img: humanidades, title: t("projects.humanidades.title"), desc: t("projects.humanidades.description"), path: "/ProyectoHumanidades" },
-        { img: tesis, title: t("projects.tesis.title"), desc: t("projects.tesis.description"), path: "/ProyectoTesis"},
-        { img: github, title: t("projects.githubFinder.title"), desc: " ", path: "https://github.com/cromx123"},
+        {  id: "aqua", img: aquaWeb, title: t("projects.aquaWeb.title"),desc: t("projects.aquaWeb.description")},
+        {  id: "magic", img: magicGourmet, title: t("projects.magicGourmet.title"), desc: t("projects.magicGourmet.description")},
+        {  id: "crawler",img: crawler, title: t("projects.crawlerApi.title"), desc: t("projects.crawlerApi.description")},
+        {  id: "sendlove",img: sendLove, title: t("projects.sendLove.title"), desc: t("projects.sendLove.description")},
+        {  id: "humanidades",img: humanidades, title: t("projects.humanidades.title"), desc: t("projects.humanidades.description")},
+        { id: "tesis",img: tesis, title: t("projects.tesis.title"), desc: t("projects.tesis.description")},
+        { id: "github",img: github, title: t("projects.githubFinder.title"), desc: " ", external: true, url: "https://github.com/cromx123" },
     ];
 
   return (
