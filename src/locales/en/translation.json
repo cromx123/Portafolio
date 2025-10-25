@@ -93,8 +93,20 @@
         },
         "githubFinder": {
             "title": "View all projects on GitHub"
-        }
-
+        },
+        "title": "Projects",
+        "description": "Description of the project",
+        "details": "Project Details",
+        "skills": "Skills Used",
+        "info": {
+            "title": "Project Information",
+            "client": "Client",
+            "role": "Role",
+            "duration": "Duration",
+            "completed": "Completed"
+        },
+        "next": "Next Project",
+        "previous": "Previous Project"
     }
 
 }

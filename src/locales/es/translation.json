@@ -74,7 +74,7 @@
         },
         "crawlerApi": {
             "title": "Crawler Api",
-            "description": "Plataforma de análisis de datos de YouTube utilizando API, scraping, visualización y herramientas de exportación."
+            "description": "Plataforma de análisis de datos de You,Tube utilizando API, scraping, visualización y herramientas de exportación."
         },
         "sendLove": {
             "title": "Send Love",
@@ -94,7 +94,19 @@
         },
         "githubFinder": {
             "title": "Ver todos los proyectos en GitHub"
-        }
+        },
+        "description": "Descripción del proyecto",
+        "details": "Detalles del proyecto",
+        "skills": "Habilidades utilizadas",
+        "info": {
+            "title": "Información del proyecto",
+            "client": "Cliente",
+            "role": "Rol",
+            "duration": "Duración",
+            "completed": "Completado"
+        },
+        "next": "Siguiente proyecto",
+        "previous": "Proyecto anterior"
     }
 
 }
