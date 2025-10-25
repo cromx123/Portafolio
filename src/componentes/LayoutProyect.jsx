@@ -76,13 +76,18 @@ export default function ProyectoLayout({
               </h2>
               <div className="flex flex-wrap gap-4">
                 {habilidades.map(([alt, src]) => (
-                  <motion.img
+                  <div key={alt} className="group flex flex-col items-center">
+                    <motion.img
                     key={alt}
                     src={src}
                     alt={alt}
                     className="w-12 h-12 grayscale hover:grayscale-0 hover:scale-110 transition-transform"
                     whileHover={{ scale: 1.2 }}
                   />
+                    <span className="text-xs text-pink-400 mt-2 opacity-0 group-hover:opacity-100 transition-all">
+                      {alt}
+                    </span>
+                  </div>
                 ))}
               </div>
 
