@@ -5,6 +5,7 @@ import { useTranslation } from "react-i18next";
 import GlowBackground from "./Detalles/glow";
 import FooterSection from "../componentes/home/FooterSection";
 
+
 export default function ProyectoLayout({
   title,
   image,
@@ -19,6 +20,11 @@ export default function ProyectoLayout({
 }) {
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const { i18n } = useTranslation();
+  const lang = i18n.language.slice(0, 2);
+  const currentDesc = descripcion[lang];
+  const currentDetalle = detalle[lang];
+  console.log(lang);
 
   return (
     <GlowBackground
@@ -44,6 +50,7 @@ export default function ProyectoLayout({
           <span>•</span>
           <span className="text-pink-400">{title}</span>
         </div>
+
       </motion.header>
 
       {/* BODY */}
@@ -60,14 +67,14 @@ export default function ProyectoLayout({
               <h2 className="text-2xl font-bold text-pink-400 mb-3 border-l-4 border-pink-400 pl-3 uppercase tracking-wider">
                 {t("projects.description") || "Descripción del proyecto"}
               </h2>
-              <p className="text-gray-300 leading-relaxed">{descripcion}</p>
+              <p className="text-gray-300 leading-relaxed">{currentDesc}</p>
             </section>
 
             <section>
               <h2 className="text-2xl font-bold text-cyan-400 mb-3 border-l-4 border-cyan-400 pl-3 uppercase tracking-wider">
                 {t("projects.details") || "Detalle del desarrollo"}
               </h2>
-              <p className="text-gray-300 leading-relaxed">{detalle}</p>
+              <p className="text-gray-300 leading-relaxed">{currentDetalle}</p>
             </section>
 
             <section>

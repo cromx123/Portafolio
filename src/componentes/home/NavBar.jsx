@@ -45,8 +45,8 @@ export default function Navbar() {
           <a href="https://github.com/cromx123" target="_blank" rel="noopener noreferrer" className="hover:text-pink-400">
             <Github className="w-5 h-5" />
           </a>
-          <button onClick={() => i18n.changeLanguage(i18n.language === 'en' ? 'es' : 'en')} className="hover:text-pink-400">
-            {i18n.language === 'en' ? 'ES' : 'EN'}
+          <button onClick={() => i18n.changeLanguage(i18n.language.slice(0, 2) === 'en' ? 'es' : 'en')} className="hover:text-pink-400">
+            {i18n.language.slice(0, 2) === 'en' ? 'ES' : 'EN'}
           </button>
           <button onClick={() => setDarkMode(darkMode === "dark" ? "light" : "dark")} className="hover:text-pink-400">
             {darkMode === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}

@@ -11,10 +11,14 @@ export const projects = [
     id: "tesis",
     title: "Medical Data Analysis Platform (SSMN)",
     image: tesisImage,
-    descripcion:
-      "Web platform developed for the Metropolitan North Health Service to manage and analyze medical data using predictive and clustering models for research and decision-making.",
-    detalle:
-      "The system integrates predictive, optimization, clustering, and classification algorithms to support healthcare research. Includes model versioning, interactive dashboards, and tools for training and evaluating models directly from the web interface.",
+    descripcion:{
+      "es": "Plataforma web desarrollada para el Servicio de Salud Metropolitano Norte destinada a la gestión y análisis de datos médicos mediante modelos predictivos y de clustering para investigación y toma de decisiones.",
+      "en": "Web platform developed for the Metropolitan North Health Service to manage and analyze medical data using predictive and clustering models for research and decision-making."
+    },
+    detalle:{
+      "es": "El sistema integra algoritmos de predicción, optimización, clustering y clasificación para apoyar la investigación en salud. Incluye versionado de modelos, dashboards interactivos y herramientas para entrenar y evaluar modelos directamente desde la interfaz web.",
+      "en": "The system integrates predictive, optimization, clustering, and classification algorithms to support healthcare research. Includes model versioning, interactive dashboards, and tools for training and evaluating models directly from the web interface."
+    },
     habilidades: [
       ["Python", "https://img.icons8.com/?size=100&id=lXPUSRCongH1&format=png&color=ffffff"],
       ["FastAPI", "https://icon.icepanel.io/Technology/svg/FastAPI.svg"],
@@ -37,10 +41,14 @@ export const projects = [
     id: "aqua",
     title: "AquaWeb",
     image: aquaWeb,
-    descripcion:
-      "AquaWeb es una plataforma web creada para la administración y venta de agua purificada. Su interfaz amigable permite a los clientes realizar pedidos, programar entregas y consultar su historial de compras.",
-    detalle:
-      "El sistema cuenta con autenticación por roles (cliente, operador, admin), conexión a base de datos MySQL, un panel de control para la gestión de pedidos, reportes y usuarios. Se implementaron buenas prácticas de seguridad, estructura modular y diseño responsive.",
+    descripcion:{
+      "es": "AquaWeb es una plataforma web creada para la administración y venta de agua purificada. Su interfaz amigable permite a los clientes realizar pedidos, programar entregas y consultar su historial de compras.",
+      "en": "AquaWeb is a web platform created for the management and sale of purified water. Its user-friendly interface allows customers to place orders, schedule deliveries, and view their purchase history.",
+    },
+    detalle:{
+      "es": "El sistema cuenta con autenticación por roles (cliente, operador, admin), conexión a base de datos MySQL, un panel de control para la gestión de pedidos, reportes y usuarios. Se implementaron buenas prácticas de seguridad, estructura modular y diseño responsive.",
+      "en": "The system features role-based authentication (client, operator, admin), MySQL database connection, and a control panel for managing orders, reports, and users. Best security practices, modular structure, and responsive design were implemented.",
+    },
     habilidades: [
       ["HTML", "https://img.icons8.com/?size=100&id=20909&format=png&color=ffffff"],
       ["CSS", "https://img.icons8.com/?size=100&id=21278&format=png&color=ffffff"],
@@ -62,10 +70,14 @@ export const projects = [
     id: "magic",
     title: "Magic Gourmet",
     image: magicGourmet,
-    descripcion:
-      "Magic Gourmet es una plataforma web gastronómica que permite explorar recetas, agendar reservas y descubrir eventos culinarios. Está orientada a usuarios aficionados y profesionales.",
-    detalle:
-      "El sistema fue diseñado con arquitectura modular y experiencia de usuario como prioridad. Incorpora autenticación básica, base de datos MySQL para recetas, reservas y eventos, además de un dashboard de gestión.",
+    descripcion:{
+      "es": "Magic Gourmet es una plataforma web gastronómica que permite explorar recetas, agendar reservas y descubrir eventos culinarios. Está orientada a usuarios aficionados y profesionales.",
+      "en": "Magic Gourmet is a gastronomic web platform that allows users to explore recipes, schedule reservations, and discover culinary events. It is aimed at both amateur and professional users."
+    },
+    detalle:{
+      "es": "El sistema fue diseñado con arquitectura modular y experiencia de usuario como prioridad. Incorpora autenticación básica, base de datos MySQL para recetas, reservas y eventos, además de un dashboard de gestión.",
+      "en": "The system was designed with a modular architecture and user experience as a priority. It incorporates basic authentication, a MySQL database for recipes, reservations, and events, as well as a management dashboard."
+    },
     habilidades: [
       ["Android", "https://img.icons8.com/?size=100&id=04OFrkjznvcd&format=png&color=ffffff"],
       ["MySQL", "https://img.icons8.com/?size=100&id=9nLaR5KFGjN0&format=png&color=ffffff"],
@@ -85,10 +97,14 @@ export const projects = [
     id: "crawler",
     title: "YouTube Crawler",
     image: crawlerImg,
-    descripcion:
-      "Proyecto desarrollado para recolectar y analizar datos de videos en YouTube mediante API oficial y técnicas de scraping con Python. Permite explorar canales, filtrar contenido y visualizar métricas clave.",
-    detalle:
-      "Se diseñó un crawler que combina API de YouTube con BeautifulSoup para obtener información extendida de videos. Los datos se procesan y envían a un frontend en React con filtros, estadísticas y exportación.",
+    descripcion:{
+      "es": "Proyecto desarrollado para recolectar y analizar datos de videos en YouTube mediante API oficial y técnicas de scraping con Python. Permite explorar canales, filtrar contenido y visualizar métricas clave.",
+      "en": "Project developed to collect and analyze video data on YouTube using the official API and scraping techniques with Python. It allows exploring channels, filtering content, and visualizing key metrics."
+    },
+    detalle:{
+      "es": "Se diseñó un crawler que combina API de YouTube con BeautifulSoup para obtener información extendida de videos. Los datos se procesan y envían a un frontend en React con filtros, estadísticas y exportación.",
+      "en": "A crawler was designed that combines the YouTube API with BeautifulSoup to obtain extended video information. The data is processed and sent to a React frontend with filters, statistics, and export functionality."
+    },
     habilidades: [
       ["Python", "https://img.icons8.com/?size=100&id=13441&format=png&color=ffffff"],
       ["React", "https://img.icons8.com/?size=100&id=123603&format=png&color=ffffff"],
@@ -110,10 +126,14 @@ export const projects = [
     id: "sendlove",
     title: "Send Love",
     image: sendLove,
-    descripcion:
-      "Send Love es un juego casual para Android creado con Flutter. El jugador lanza corazones evitando obstáculos. Incluye autenticación con Firebase, rankings en tiempo real y niveles progresivos.",
-    detalle:
-      "El desarrollo se centró en la mecánica tipo 'clicker', con física personalizada y control táctil. Integra Firebase Authentication y Firestore para perfiles y puntuaciones dinámicas.",
+    descripcion:{
+      "es": "Send Love es un juego casual para Android creado con Flutter. El jugador lanza corazones evitando obstáculos. Incluye autenticación con Firebase, rankings en tiempo real y niveles progresivos.",
+      "en": "Send Love is a casual game for Android created with Flutter. The player throws hearts while avoiding obstacles. It includes Firebase authentication, real-time leaderboards, and progressive levels."
+    },
+    detalle:{
+      "es": "El desarrollo se centró en la mecánica tipo 'clicker', con física personalizada y control táctil. Integra Firebase Authentication y Firestore para perfiles y puntuaciones dinámicas.",
+      "en": "The development focused on 'clicker' mechanics, with custom physics and touch controls. It integrates Firebase Authentication and Firestore for dynamic profiles and scores."
+    },
     habilidades: [
       ["Android Studio", "https://img.icons8.com/?size=100&id=04OFrkjznvcd&format=png&color=ffffff"],
       ["Firebase", "https://img.icons8.com/?size=100&id=87330&format=png&color=ffffff"],
@@ -138,10 +158,14 @@ export const projects = [
     id: "humanidades",
     title: "Humanidades 360°",
     image: humanidadesImage,
-    descripcion:
-      "Aplicación web para explorar y administrar los espacios del campus de Humanidades mediante un mapa interactivo con OpenStreetMap.",
-    detalle:
-      "Desarrollada con Flutter Web, integra detección por voz, selección de áreas, filtros de búsqueda y generación de formularios PDF para registrar nuevos espacios. Ideal para gestión geográfica académica.",
+    descripcion:{
+      "es": "Aplicación web para explorar y administrar los espacios del campus de Humanidades mediante un mapa interactivo con OpenStreetMap.",
+      "en": "Web application to explore and manage the spaces of the Humanities campus through an interactive map with OpenStreetMap."
+    },
+    detalle:{
+      "es": "El sistema permite a los usuarios buscar y visualizar espacios del campus en un mapa interactivo. Los administradores pueden agregar nuevos espacios mediante formularios que generan coordenadas geográficas y almacenan la información en una base de datos.",
+      "en": "The system allows users to search and view campus spaces on an interactive map. Administrators can add new spaces through forms that generate geographic coordinates and store the information in a database."
+    },
     habilidades: [
       ["Flutter", "https://img.icons8.com/?size=100&id=7I3BjCqe9rjG&format=png&color=000000"],
       ["HTML", "https://img.icons8.com/?size=100&id=20909&format=png&color=ffffff"],

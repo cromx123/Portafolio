@@ -12,5 +12,18 @@ export default function ProyectoPage() {
   }, [proyecto]);
 
   if (!proyecto) return <div>Proyecto no encontrado</div>;
-  return <ProyectoLayout {...proyecto} />;
+  return (
+    <ProyectoLayout
+      title={proyecto.title}
+      descripcion={proyecto.descripcion}
+      detalle={proyecto.detalle}
+      habilidades={proyecto.habilidades}
+      detallep={proyecto.detallep}
+      glowColor={proyecto.glowColor}
+      extraButton={proyecto.extraButton}
+      rutaAnterior={proyecto.rutaAnterior}
+      rutaSiguiente={proyecto.rutaSiguiente}
+      image={proyecto.image}
+    />
+  );
 }
