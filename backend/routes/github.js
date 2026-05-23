@@ -1,6 +1,5 @@
 import express from "express";
 import fetch from "node-fetch";
-import GitHubStat from "../models/GithubStat.js";
 import { graphql } from "@octokit/graphql";
 import dotenv from "dotenv";
 import fs from "fs";
@@ -12,30 +11,70 @@ const router = express.Router();
 const username = process.env.GITHUB_USERNAME || "cromx123";
 const TOKEN = process.env.GITHUB_TOKEN;
 
-// Utilidad simple de logs
+// Cache en archivo para evitar rate limit (6 horas)
+const DATA_DIR = path.join(process.cwd(), "data");
+const CACHE_FILE = path.join(DATA_DIR, "github_cache.json");
+const HISTORY_FILE = path.join(DATA_DIR, "github_history.json");
+const LOG_FILE = path.join(process.cwd(), "github.log");
+
+if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
+
 function logToFile(message) {
-  const logPath = path.join(process.cwd(), "github.log");
   const timestamp = new Date().toISOString();
-  fs.appendFileSync(logPath, `[${timestamp}] ${message}\n`);
+  try {
+    fs.appendFileSync(LOG_FILE, `[${timestamp}] ${message}\n`);
+  } catch (e) {
+    console.error("No se pudo escribir en el log:", e.message);
+  }
 }
 
-// Cache en archivo para evitar rate limit (6 horas)
-const CACHE_FILE = path.join(process.cwd(), "github_cache.json");
+async function saveToHistory(stats) {
+  try {
+    let history = [];
+    if (fs.existsSync(HISTORY_FILE)) {
+      const content = fs.readFileSync(HISTORY_FILE, "utf-8");
+      history = JSON.parse(content);
+    }
+    
+    // Crear la nueva entrada (equivalente a GitHubStat.create)
+    const newEntry = {
+      date: new Date().toISOString(),
+      repositories: stats.repositories,
+      stars: stats.stars,
+      contributions: stats.contributions,
+      pullRequests: stats.pullRequests,
+      followers: stats.followers,
+    };
+
+    history.push(newEntry);
+    
+    // Opcional: Mantener solo los últimos 100 registros para no inflar el JSON
+    if (history.length > 100) history.shift();
+
+    fs.writeFileSync(HISTORY_FILE, JSON.stringify(history, null, 2));
+    logToFile("Historial guardado en JSON local");
+  } catch (err) {
+    logToFile(`Error guardando historial JSON: ${err.message}`);
+  }
+}
+
 const CACHE_TTL_MS = 6 * 60 * 60 * 1000;
 
 function readCache() {
   try {
-    const txt = fs.readFileSync(CACHE_FILE, "utf8");
-    const json = JSON.parse(txt);
+    if (!fs.existsSync(CACHE_FILE)) return null;
+    const json = JSON.parse(fs.readFileSync(CACHE_FILE, "utf8"));
     if (Date.now() - json.timestamp < CACHE_TTL_MS) return json.data;
   } catch {}
   return null;
 }
+
 function writeCache(data) {
-  fs.writeFileSync(
-    CACHE_FILE,
-    JSON.stringify({ timestamp: Date.now(), data }, null, 2)
-  );
+  try {
+    fs.writeFileSync(CACHE_FILE, JSON.stringify({ timestamp: Date.now(), data }, null, 2));
+  } catch (e) {
+    logToFile(`Error escribiendo cache: ${e.message}`);
+  }
 }
 
 async function gh(url) {
@@ -356,13 +395,7 @@ router.get("/", async (req, res) => {
     };
 
     // Guarda en DB y cache
-    await GitHubStat.create({
-      repositories: stats.repositories,
-      stars: stats.stars,
-      contributions: stats.contributions,
-      pullRequests: stats.pullRequests,
-      followers: stats.followers,
-    });
+    await saveToHistory(stats);
     writeCache(stats);
 
     logToFile(`GitHub stats actualizadas: ${JSON.stringify(stats)}`);

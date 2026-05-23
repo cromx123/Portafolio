@@ -35,7 +35,7 @@ import { formatRange } from "../../utils/formatDate.jsx";
 const ENDPOINT =
   process.env.REACT_APP_GITHUB_STATS_URL ||
   process.env.NEXT_PUBLIC_GITHUB_STATS_URL ||
-  "http://localhost:3002/api/github";
+  "https://cgallardoc.cl/api/github";
 
 const TABS = [
   { title: "SYSTEM_OVERVIEW", icon: BarChart3 },
